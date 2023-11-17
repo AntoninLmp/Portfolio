@@ -1,0 +1,339 @@
+/* =================== GLOBAL =================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Raleway', sans-serif; */
+
+body{
+    background-color: black;
+    color: white;
+}
+/* =================== COLOR =================== */
+.c_white {
+    color: rgb(230, 228, 228);
+}
+
+/* A SUPPRIMER */
+.c_black {
+    color: black;
+}
+
+.c_green {
+    color: #25a244;
+}
+/* =================== BACKGROUND =================== */
+.bg_black {
+    background-color: black;
+}
+
+.bg_yellow {
+    background-color: #ffd6a5;
+}
+
+.bg_green {
+    background-color: #25a244;
+}
+
+.bg_blue {
+    background-color: #bde0fe;
+}
+
+.bg_white {
+    background-color: rgb(212, 226, 209);
+}
+
+/* =================== DISPLAY MODES ===================*/
+.d_none {
+    display: none;
+}
+.d_flex {
+    display: flex;
+}
+.d_content {
+    display: contents;
+}
+.justify_a {
+    justify-content: space-around;
+}
+.justify_b {
+    justify-content: space-between;
+}
+.justify_e {
+    justify-content: space-evenly;
+}
+.justify_c {
+    justify-content: center;
+}
+.align_center {
+    align-items: center;
+}
+.flex_wrap {
+    flex-wrap: wrap;
+}
+.flex_column {
+    flex-direction: column;
+}
+.text_center{
+    text-align: center;
+}
+
+/* =================== WIDTH/HEIGHT MODES ===================*/
+
+.w_100 {
+    width: 100%;
+}
+.w_30 {
+    width: 30%;
+}
+
+.h_100{
+    height: 100%;
+}
+.h_70 {
+    height: 70%;
+}
+.h_100 {
+    height: 100%;
+}
+/* =================== MARGIN MODES ===================*/
+.fullscreen {
+    width: 100%;
+    height: 100vh;
+}
+.mx_20 {
+    margin: 1em 20%;
+}
+
+.mx_10 {
+    margin: 1em 10%;
+}
+
+.mx-1e {
+    margin-left: 1em;
+}
+.mr-1e {
+    margin-right: 1%;
+}
+.mr-5e {
+    margin-right: 5%;
+}
+
+.mb_4 {
+    margin-bottom: 4%;
+}
+
+/* =================== PADDING MODES ===================*/
+.padding_1 {
+    padding: 1em;
+}
+
+.padding_x10 {
+    padding: 7% 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+.oblique{
+    font-style: oblique;
+}
+/* =================== HeaderHomePage =================== */
+
+
+.typewriter {
+    font-size: 3em;
+    margin: 25% 0 10% 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    /* font-style:italic; */
+    /* font-family: 'Bebas Neue', cursive; */
+}
+
+.Header_desc{
+    font-size: 1.4em;
+    font-style: initial;
+    font-weight: 200;
+    margin-right: 5px;
+}
+
+
+/* =================== NAVBAR =================== */
+.Navbar {
+    width: 30%;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 0 1.5em;
+}
+
+.list_display {
+    list-style: none;
+    text-align: start;
+    font-weight: 400;
+    /* letter-spacing: 0.1em; */
+}
+
+.list_display li {
+    margin-bottom: 1em;
+}
+
+.list_display li a:hover {
+    font-size: 1.1em;
+}
+
+.list_item{
+    transform: translate(0);
+    transition-duration: 2s;
+    transition: transform 1s ease-in-out;
+}
+
+.text_menu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    width: 75px;
+}
+/* =================== BURGER MENU =================== */
+
+
+.navbar .nav-container a:hover {
+    font-weight: bolder;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #25a244;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #0e2431;
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.logo {
+    display: none;
+}
+
+.lign_green {
+    border-top: #25a244 solid 3px;
+}
+
+/* =================== Footer =================== */
+
+footer {
+    border-top: solid green 1px;
+    font-family: 'Raleway', sans-serif;
+    margin: 3em 20%;
+}
+#footer_text {
+    font-size: 3em;
+    font-weight: 300;
+}
+#copyright{
+    font-size: 1em;
+    font-weight: 200;
+}
+.img_logo_footer {
+    width: 100px;
+    height: 100px;
+}

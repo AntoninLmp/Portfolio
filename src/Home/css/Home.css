@@ -1,0 +1,117 @@
+/* =================== HomePage =================== */
+.border_rad {
+    border-radius: 15px;
+    padding: 11% 0 !important;
+    height: 300px !important;
+}
+.titleHomeBlock {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.titlePrimary1{
+    font-size: 2.5em;
+    font-weight: 600;
+    font-style: oblique;
+}
+.titlePrimary2{
+    font-size: 2.5em;
+    font-weight: 300;
+}
+.titlePrimary3{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.text_secondary {
+    color: rgb(143, 140, 140);
+    font-weight: 200;
+    font-style: italic;
+}
+.description{
+    text-align: justify;
+    font-weight: 200;
+    font-size: 1.2em;
+    line-height: 1.7rem;
+}
+
+section article {
+    width: 25%;
+}
+
+#p_homepage {
+    text-align: center;
+    padding: 1em;
+    font-weight: 200;
+}
+
+.img_logo_entreprise {
+    width: 33%;
+    margin: 1em 5%;
+}
+
+#mcdonald {
+    width: 15%;
+    margin: 1em 5%;
+}
+
+.btn_seeMore {
+    background: transparent;
+    padding: 1em 2em;
+    border: 2px solid grey;
+    width: fit-content;
+    color: white;
+    cursor:pointer;
+    box-shadow: 2px 2px 2px rgb(77, 77, 77);
+    margin-top: 2em;
+    /* transition: ease-in background-color 100ms; */
+}
+.btn_seeMore:hover{
+    background-color: white;
+    color: black;
+}
+
+.bg_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.bg_scool {
+    background-image: url("../../../images/efrei.png");
+}
+
+.bg_projet {
+    background-image: url("../../../images/code.jpg");
+}
+
+.bg_antonin {
+    background-image: url("../../../images/IMG-20221111-WA0073.jpg");
+}
+
+.bg_pro {
+    background-image: url("../../../images/openspace.jpg");
+}
+
+
+/* ====== MAIN PAGE ======= */
+body {
+    margin: 0;
+}
+
+.nameBase{
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 1.3em;
+}
+#FirstLastName{
+    letter-spacing: 1em;
+    font-size: 1.9em;
+}
+#DescriptionName{
+    letter-spacing: 0.8em;
+    font-size: 1.2em;
+}
+

@@ -1,0 +1,13 @@
+.img_carrer_entreprise {
+    height: 45px;
+    width: 127px;
+}
+
+.entreprise {
+    padding: 1em 2em;
+    width: 43%;
+}
+
+.entreprise p {
+    text-align: justify;
+}
