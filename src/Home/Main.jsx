@@ -1,9 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import './css/Home.css';
-import '../Global/index.css';
+import '../index.css';
 import HeaderHomePage from './HeaderHomePage.jsx';
-import HomePage from './Home.jsx';
+import MainContent from './MainContent.jsx';
 import Navbar from '../Global/Navbar.jsx';
 import Footer from "../Global/Footer.jsx";
 
@@ -23,7 +23,7 @@ const MainPage = () => {
                     </header>
                 </div>
                 <main>
-                    <HomePage></HomePage>
+                    <MainContent></MainContent>
                 </main>
                 <Footer></Footer>
             </div>

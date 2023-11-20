@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
-import './index.css';
+import '../index.css';
 
-function Navbar() {
-    const [menuOpen, setMenuOpen] = useState(false); 
-    const [transitionMenu, setTransitionMenu] = useState(null)
+function Menu() {
+    let menuOpen, setMenuOpen;
+    [menuOpen, setMenuOpen] = useState(false);
+    let transitionMenu, setTransitionMenu;
+    [transitionMenu, setTransitionMenu] = useState(null);
 
     
     const toggleMenu = () => {
@@ -34,13 +36,13 @@ function Navbar() {
                             <Link to={"/Home"} className="c_green">Home</Link>
                         </li>
                         <li className={transitionMenu}>
-                            <Link to={"/AntoninLampin"} className="c_white">Moi</Link>
+                            <Link to={"/AntoninLampin"} className={"text-black"}>Moi</Link>
                         </li>
                         <li className={transitionMenu}>
                             <Link to={"/Studies"} className="c_green">Etudes</Link>
                         </li>
                         <li className={transitionMenu}>
-                            <Link to={"/Project"} className="c_white">Projet</Link>
+                            <Link to={"/Project"} className={"text-black"}>Projet</Link>
                         </li>
                         <li className={transitionMenu}>
                             <Link to={"/parcoursProfessionnel"} className="c_green">Parcours pro.</Link>
@@ -52,4 +54,4 @@ function Navbar() {
     )
 }
 
-export default Navbar;
+export default Menu;

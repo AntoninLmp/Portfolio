@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import '../Global/index.css';
+import '../index.css';
 import './css/Home.css';
 
 import Logo_Weldom_2012 from '../../public/Logo_Weldom_2012.png';
 
-function HomePage() {
+function MainContent() {
     const [isVisible, setIsVisible] = useState(false);
 
     const handleScroll = () => {
         const scrolled = window.scrollY;
-        const threshold = 200; // ajuste cette valeur selon tes besoins
-
+        const threshold = 200;
         setIsVisible(scrolled > threshold);
     };
     useEffect(() => {
@@ -93,4 +92,4 @@ function HomePage() {
     );
 }
 
-export default HomePage; 
+export default MainContent;

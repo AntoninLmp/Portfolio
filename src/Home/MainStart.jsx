@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { Outlet } from "react-router-dom";
 
 import HeaderHomePage from './HeaderHomePage.jsx';
-import HomePage from './Home.jsx';
+import MainContent from './MainContent.jsx';
 import Navbar from '../Global/Navbar.jsx';
 import StartName from './Starter.jsx';
 import Footer from "../Global/Footer.jsx";
 import Header from "../Global/Header";
 
-import '../Global/index.css';
+import '../index.css';
 
 
 const MainPage = () => {
@@ -20,6 +20,7 @@ const MainPage = () => {
         setHome('d_none');
         setMain('d_content'); 
     }, 6100);
+
     return (
         <>
             <div className={Home}>
@@ -34,7 +35,7 @@ const MainPage = () => {
                     </header>
                 </div>
                 <main>
-                    <HomePage></HomePage>
+                    <MainContent></MainContent>
                 </main>
                 <Footer></Footer>
             </div>

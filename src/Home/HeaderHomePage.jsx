@@ -1,4 +1,4 @@
-import '../Global/index.css';
+import '../index.css';
 import Typewriter from 'typewriter-effect';
 
 function HeaderHomePage() {
@@ -7,6 +7,7 @@ function HeaderHomePage() {
             <section className='font_raleway'>
                 <p className='Header_desc'>Bienvenue sur mon <span className='c_green bold oblique'>portfolio</span> !</p>
                 <div className='d_flex'>
+                    {/*<img src="https://gifdb.com/images/high/animated-man-computer-coding-nae6mec378lsg1i3.gif"/>*/}
                     <p className='Header_desc d_flex'>A travers ce site, vous découvrirez que je suis</p>
                     <p className='Header_desc d_flex'>
                         <Typewriter options={{

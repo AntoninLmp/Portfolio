@@ -1,18 +1,20 @@
-import React , { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './css/Starter.css';
-
+import '../index.css';
 
 function StartName() {
     const [classNameDiv, setclassNameDiv] = useState('start-div');
-    const [Timer1, setTimer1] = useState(null)
-    const [Timer2, setTimer2] = useState(null)
+    let Timer1, setTimer1;
+    [Timer1, setTimer1] = useState(null);
+    let Timer2, setTimer2;
+    [Timer2, setTimer2] = useState(null);
 
     useEffect(() => {
         setTimer1(setTimeout(() => {
-            setclassNameDiv('start-div blackwindow');
+            setclassNameDiv('start-div black-window');
         }, 5000));
         setTimer2(setTimeout(() => {
-            setclassNameDiv('display_none');
+            setclassNameDiv('hidden');
         }, 5900));
         return () => {
             clearTimeout(Timer1);

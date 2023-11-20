@@ -1,4 +1,4 @@
-import "../Global/index.css"
+import '../index.css';
 
 import Navbar from "../Global/Navbar.jsx";
 import Header from "../Global/Header";
