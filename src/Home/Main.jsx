@@ -4,7 +4,7 @@ import './css/Home.css';
 import '../index.css';
 import HeaderHomePage from './HeaderHomePage.jsx';
 import MainContent from './MainContent.jsx';
-import Navbar from '../Global/Navbar.jsx';
+import Header from "../Global/Header.jsx";
 import Footer from "../Global/Footer.jsx";
 
 
@@ -13,12 +13,8 @@ const MainPage = () => {
         <>
             <div>
                 <div className="fullscreen">
-                    <section>
-                        <div className="nameBase" id="FirstLastName">Antonin lampin</div>
-                        <div className="nameBase" id="DescriptionName">Software engineer</div>
-                    </section>
-                    <header className='d_flex h_100'> 
-                        <Navbar></Navbar>
+                    <Header></Header>
+                    <header className='d_flex h_100'>
                         <HeaderHomePage></HeaderHomePage>
                     </header>
                 </div>

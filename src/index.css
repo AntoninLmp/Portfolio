@@ -1,4 +1,4 @@
-/* Tailwind usefully directives */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,500;0,8..144,700;1,8..144,200;1,8..144,300;1,8..144,500;1,8..144,700&display=swap'); /* Tailwind usefully directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -86,29 +86,14 @@ body{
   background-color: #ffffff;
   color: black;
 }
+
+.font-roboto{
+  font-family: 'Roboto Serif', serif;
+}
+
 /* =================== COLOR =================== */
 .c_green {
-  color: #76c893;
-}
-/* =================== BACKGROUND =================== */
-.bg_black {
-  background-color: black;
-}
-
-.bg_yellow {
-  background-color: #ffd6a5;
-}
-
-.bg_green {
-  background-color: #25a244;
-}
-
-.bg_blue {
-  background-color: #bde0fe;
-}
-
-.bg_white {
-  background-color: rgb(212, 226, 209);
+  color: #18C3A1;
 }
 
 /* =================== DISPLAY MODES ===================*/
@@ -145,7 +130,9 @@ body{
 .text_center{
   text-align: center;
 }
-
+.text_shadow{
+  text-shadow: 1px 1px 2px;
+}
 /* =================== WIDTH/HEIGHT MODES ===================*/
 
 .w_100 {
@@ -222,12 +209,6 @@ body{
   /* font-family: 'Bebas Neue', cursive; */
 }
 
-.Header_desc{
-  font-size: 1.4em;
-  font-style: initial;
-  font-weight: 200;
-  margin-right: 5px;
-}
 .nameBase{
   font-family: 'Raleway';
   text-transform: uppercase;

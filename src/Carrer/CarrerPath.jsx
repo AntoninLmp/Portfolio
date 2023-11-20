@@ -1,4 +1,3 @@
-import Navbar from '../Global/Navbar.jsx';
 import Header from "../Global/Header";
 import '../index.css';
 import './CarrerPath.css';
@@ -14,7 +13,6 @@ function CarrerPath() {
     return (
         < >
             <Header></Header>
-            <Navbar></Navbar>
             <section className='d_flex mx_10 flex_wrap justify_b'>
                 <article className='entreprise'>
                     <img src={thales} alt='Thales Logo' className='img_carrer_entreprise' />
