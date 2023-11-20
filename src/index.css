@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,500;0,8..144,700;1,8..144,200;1,8..144,300;1,8..144,500;1,8..144,700&display=swap'); /* Tailwind usefully directives */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,500;0,8..144,700;1,8..144,200;1,8..144,300;1,8..144,500;1,8..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap'); /* Tailwind usefully directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -42,13 +45,6 @@ body {
 
 /* =================== GLOBAL =================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap');
-/* font-family: 'Bebas Neue', cursive;
-font-family: 'Shadows Into Light', cursive;
-font-family: 'Raleway', sans-serif; */
-
 body{
   background-color: #ffffff;
   color: black;
@@ -59,6 +55,12 @@ body{
 }
 
 /* =================== COLOR =================== */
+.c_green {
+  color: #18C3A1;
+}
+.c_green {
+  color: #18C3A1;
+}
 .c_green {
   color: #18C3A1;
 }
@@ -76,6 +78,7 @@ body{
 .d_content {
   display: contents;
 }
+/* A SUPPRIMER */
 .justify_a {
   justify-content: space-around;
 }

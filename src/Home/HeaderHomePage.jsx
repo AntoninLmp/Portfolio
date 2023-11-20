@@ -22,6 +22,7 @@ function HeaderHomePage() {
                 </div>
             </section>
             <button className={"bg_green mt-5 italic p-4 rounded-xl"}>Let's go</button>
+
         </div>
     );
 }
