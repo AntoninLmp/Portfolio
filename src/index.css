@@ -24,10 +24,10 @@
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: 'Roboto Serif', serif;
 }
 
 @media (prefers-color-scheme: light) {
@@ -58,11 +58,11 @@ body{
 .c_green {
   color: #18C3A1;
 }
-.c_green {
-  color: #18C3A1;
+.c_pink {
+  color: #EF767A;
 }
-.c_green {
-  color: #18C3A1;
+.c_yellow {
+  color: #EEB868;
 }
 .bg_green{
   background-color: #18C3A1;
@@ -357,15 +357,7 @@ footer {
   font-family: 'Raleway', sans-serif;
   margin: 3em 20%;
 }
-#footer_text {
-  font-size: 3em;
-  font-weight: 300;
-}
 #copyright{
   font-size: 1em;
   font-weight: 200;
-}
-.img_logo_footer {
-  width: 100px;
-  height: 100px;
 }

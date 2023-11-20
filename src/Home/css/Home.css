@@ -4,10 +4,6 @@
     padding: 11% 0 !important;
     height: 300px !important;
 }
-.titleHomeBlock {
-    font-weight: 300;
-    margin-bottom: 0;
-}
 
 .titlePrimary1{
     font-size: 2.5em;
@@ -23,8 +19,8 @@
     font-size: 1.5em;
 }
 .text_secondary {
-    color: rgb(143, 140, 140);
-    font-weight: 200;
+    font-size: 1.5em;
+    font-weight: 400;
     font-style: italic;
 }
 .description{

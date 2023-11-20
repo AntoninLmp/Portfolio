@@ -1,7 +1,7 @@
 import '../index.css';
 
 import Header from "../Global/Header";
-import Footer from "../Global/Footer.jsx";
+import Footer from "../Global/Footer";
 
 const PersonalPage = () => {
     return (

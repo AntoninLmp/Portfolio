@@ -4,6 +4,7 @@ import '../index.css';
 import './css/Home.css';
 
 import Logo_Weldom_2012 from '../../public/Logo_Weldom_2012.png';
+import Logos_language from '../../public/logos-removebg.png'
 
 function MainContent() {
     const [isVisible, setIsVisible] = useState(false);
@@ -27,31 +28,27 @@ function MainContent() {
                           d="M0,160L34.3,181.3C68.6,203,137,245,206,250.7C274.3,256,343,224,411,186.7C480,149,549,107,617,80C685.7,53,754,43,823,42.7C891.4,43,960,53,1029,69.3C1097.1,85,1166,107,1234,138.7C1302.9,171,1371,213,1406,234.7L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
                 </svg>
                 <section className={'flex flex_column justify-evenly bg_green'}>
-                    <div className={'w-full h-full mb_4'}>
-                        <div>
-                            <h1 className='titleHomeBlock c_green titlePrimary1'>Mes Projet</h1>
-                            <h2 className='text_secondary'>Développement de plusieurs projets au cours de mes
-                                études...</h2>
-                        </div>
+                    <div className={'w-full h-full mb_4 text-center'}>
+                        <h1 className={'text-white mb-0 font-serif titlePrimary1'}>Mes Projets</h1>
+                        <h2 className={'text-white text_secondary'}>Développement de plusieurs projets au cours de mes
+                            études...</h2>
                         <Link to={"/Project"}>
-                            {/* <img
-                            src={projectImage}
+                            <img
+                            src={Logos_language}
                             alt='Project images'
-                            className={`img_logo_entreprise ${isVisible ? 'visible' : ''}`}
-                        /> */}
-                            <article className='bg_img bg_projet border_rad w_100 h_70'></article>
+                            className={'text-center m-auto'}
+                            />
                         </Link>
                     </div>
-
                     {/*<div className='w_100 h_100 mb_4'>
-                    <div>
-                        <h1 className='titleHomeBlock c_green titlePrimary1'>Mon Parcours professionel</h1>
-                        <h2 className='text_secondary'>Mes experiences dans le monde du travail ...</h2>
-                    </div>
-                    <Link to={"/parcoursProfessionnel"}>
-                        <article className='bg_img bg_pro border_rad w_100 h_70'></article>
-                    </Link>
-                </div>*/}
+                        <div>
+                            <h1 className='mb-0 font-light c_green titlePrimary1'>Mon Parcours professionel</h1>
+                            <h2 className='text_secondary'>Mes experiences dans le monde du travail ...</h2>
+                        </div>
+                        <Link to={"/parcoursProfessionnel"}>
+                            <article className='bg_img bg_pro border_rad w_100 h_70'></article>
+                        </Link>
+                    </div>*/}
                 </section>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="#18C3A1" fill-opacity="1"
@@ -90,22 +87,22 @@ function MainContent() {
                         </p>
                     </div>
                 </article>
-                <div className={'hover:scale-150 transform transform-'}>
+                <div>
                     <Link to={"/AntoninLampin"}>
                         <a className={'btn_seeMore'}>En savoir +</a>
                     </Link>
                 </div>
             </section>
-            <section className='font_raleway mx_20 padding_1 align_center titleHomeBlock titlePrimary3'>
+            <section className='font_raleway mx_20 padding_1 align_center mb-0 font-light titlePrimary3'>
                 <p id='p_homepage'>Ils m'ont fait confiance alors pourquoi pas vous : </p>
                 <div className='d_flex align_center flex_wrap justify_c'>
-                    <img src='https://companieslogo.com/img/orig/HO.PA_BIG.D-64886ede.png?t=1646248987'
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Thales.svg/2560px-Thales.svg.png'
                          alt='Thales Logo' className='img_logo_entreprise'/>
                     <img src='https://www.restalliance.fr/wp-content/themes/restalliance/assets/img/logo.png'
                          alt='Restalliance Logo' className='img_logo_entreprise'/>
                     <img src='https://cdn.pixabay.com/photo/2021/09/22/17/17/mcdonalds-6647433_960_720.png'
                          alt='Macdonald Logo' id='mcdonald'/>
-                    <img src={Logo_Weldom_2012} alt='Weldom Logo' className='img_logo_entreprise'/>
+                    <img src={"https://cdn.cookielaw.org/logos/b3b7961d-f863-4eea-b258-af339f48d7ed/e9984d7a-9b40-440c-9e6f-469b7a59aa9f/74c97cbc-debb-4e2d-8c4c-487517bbd5f1/logo-weldom.png"} alt='Weldom Logo' className='img_logo_entreprise'/>
                 </div>
 
             </section>
