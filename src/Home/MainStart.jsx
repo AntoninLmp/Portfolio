@@ -26,9 +26,9 @@ const MainPage = () => {
                 {<StartName></StartName>}
             </div>
             <div className={Main}>
-                <div className="fullscreen">
+                <div>
                     <Header></Header>
-                    <header className='d_flex h_100'>
+                    <header className={'flex h-full'}>
                         <HeaderHomePage></HeaderHomePage>
                     </header>
                 </div>

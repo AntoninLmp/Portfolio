@@ -12,9 +12,9 @@ const MainPage = () => {
     return (
         <>
             <div>
-                <div className="fullscreen">
+                <div>
                     <Header></Header>
-                    <header className='d_flex h_100'>
+                    <header className={'flex h-full'}>
                         <HeaderHomePage></HeaderHomePage>
                     </header>
                 </div>
