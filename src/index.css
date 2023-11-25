@@ -67,62 +67,32 @@ body{
 .bg_green{
   background-color: #18C3A1;
 }
-
+.bg_pink{
+  background-color: #EF767A;
+}
+.bg_yellow{
+  background-color: #EEB868;
+}
 /* =================== DISPLAY MODES ===================*/
 .d_none {
   display: none;
 }
-.d_flex {
-  display: flex;
-}
 .d_content {
   display: contents;
 }
-/* A SUPPRIMER */
-.justify_a {
-  justify-content: space-around;
-}
-.justify_b {
-  justify-content: space-between;
-}
-.justify_e {
-  justify-content: space-evenly;
-}
-.justify_c {
-  justify-content: center;
-}
-.align_center {
-  align-items: center;
-}
-.flex_wrap {
-  flex-wrap: wrap;
-}
-.flex_column {
-  flex-direction: column;
-}
-.text_center{
-  text-align: center;
-}
+
 .text_shadow{
   text-shadow: 1px 1px 2px;
 }
 /* =================== WIDTH/HEIGHT MODES ===================*/
-
-.w_100 {
-  width: 100%;
-}
 .w_30 {
   width: 30%;
 }
-
-.h_100{
-  height: 100%;
+.w-17em{
+  width: 17em;
 }
 .h_70 {
   height: 70%;
-}
-.h_100 {
-  height: 100%;
 }
 .h_252{
   height: 252px;

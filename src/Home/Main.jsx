@@ -1,4 +1,3 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 import './css/Home.css';
 import '../index.css';

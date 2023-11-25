@@ -7,7 +7,7 @@ const Project = () => {
     return (
         <>
             <Header></Header>
-            <div className="d_flex">
+            <div className="flex">
                 <section>
                     <article>
                         Bonjour
