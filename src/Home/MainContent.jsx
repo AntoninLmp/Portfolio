@@ -129,6 +129,26 @@ function MainContent() {
                                         <div className={'h-5 w-5 bg-green-600 mx-3 rounded-full'}></div>
                                     </div>
                                     {/* =============================== Projets ===================================*/}
+
+                                    {CButton ? (
+                                        <ProjectExample
+                                            projectName={"Algorithme de Huffman"}
+                                            imageSrc={"https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Huffman_tree_2.svg/1200px-Huffman_tree_2.svg.png"}
+                                            pContent={<p className={'mx-8 mr-20 text-justify font-light'}>
+                                                L'algorithme de Huffman est un <span
+                                                className={'c_pink italic font-normal'}>algorithme de compression de données</span> qui
+                                                permet de compresser des fichiers en attribuant des codes de
+                                                longueur variable aux symboles en fonction de leur fréquence
+                                                d'apparition dans le fichier. Il a été développé par David A.
+                                                Huffman en 1952. Le principe de base de l'algorithme de Huffman
+                                                repose sur l'idée de représenter les symboles les plus fréquents
+                                                avec des codes plus courts et les symboles moins fréquents avec des
+                                                codes plus longs. Cela permet d'optimiser la taille du fichier
+                                                compressé, car les symboles fréquents sont représentés de manière
+                                                plus compacte.
+                                            </p>}
+                                        />
+                                    ) : null}
                                     {JavaButton ? (
                                         <ProjectExample
                                             projectName={'Projet Automate'}
@@ -147,25 +167,6 @@ function MainContent() {
                                                 code.
                                             </p>}
                                             githubLink={"https://github.com/AntoninLmp/Projet_Automate"}
-                                        />
-                                    ) : null}
-                                    {CButton ? (
-                                        <ProjectExample
-                                            projectName={"Algorithme de Huffman"}
-                                            imageSrc={"https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Huffman_tree_2.svg/1200px-Huffman_tree_2.svg.png"}
-                                            pContent={<p className={'mx-8 mr-20 text-justify font-light'}>
-                                                L'algorithme de Huffman est un <span
-                                                className={'c_pink italic font-normal'}>algorithme de compression de données</span> qui
-                                                permet de compresser des fichiers en attribuant des codes de
-                                                longueur variable aux symboles en fonction de leur fréquence
-                                                d'apparition dans le fichier. Il a été développé par David A.
-                                                Huffman en 1952.Le principe de base de l'algorithme de Huffman
-                                                repose sur l'idée de représenter les symboles les plus fréquents
-                                                avec des codes plus courts et les symboles moins fréquents avec des
-                                                codes plus longs. Cela permet d'optimiser la taille du fichier
-                                                compressé, car les symboles fréquents sont représentés de manière
-                                                plus compacte.
-                                            </p>}
                                         />
                                     ) : null}
                                     {PythonButton ? (
@@ -272,8 +273,7 @@ function MainContent() {
                         Salut ! Je m'appelle Antonin Lampin, je me passionne pour l'informatique et la création de
                         projets innovants. Mon interêt pour le développement informatique va de pair avec ma passion
                         pour la collaboration au sein d'une équipe. J'adore concevoir des solutions novatrices en
-                        mettant
-                        en commun nos idées et compétences. Je ne suis pas que développer, je suis aussi pleins
+                        mettant en commun nos idées et compétences. Je ne suis pas que développeur, je suis aussi pleins
                         d'autres choses ...
                     </p>
                 </article>

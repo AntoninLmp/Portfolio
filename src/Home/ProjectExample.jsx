@@ -19,7 +19,6 @@ const ProjectExample = ({ projectName, imageSrc, pContent, githubLink}) => (
         </div>
     </section>
 
-
 );
 
 export default ProjectExample;

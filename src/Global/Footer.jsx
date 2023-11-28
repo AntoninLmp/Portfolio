@@ -15,7 +15,7 @@ const Footer = () => {
                         <img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' alt='GitHub Logo' className={'w-20 h-20'} />
                     </a>
                 </div>
-                <p id="copyright">© 2023 - Antonin Lampin - Software developper</p>
+                <p id="copyright">© 2023 - Antonin Lampin - Software developpeur</p>
         </footer>
     );
 };
