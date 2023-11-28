@@ -4,10 +4,6 @@
     padding: 11% 0 !important;
     height: 300px !important;
 }
-.titleHomeBlock {
-    font-weight: 300;
-    margin-bottom: 0;
-}
 
 .titlePrimary1{
     font-size: 2.5em;
@@ -23,8 +19,8 @@
     font-size: 1.5em;
 }
 .text_secondary {
-    color: rgb(143, 140, 140);
-    font-weight: 200;
+    font-size: 1.5em;
+    font-weight: 400;
     font-style: italic;
 }
 .description{
@@ -59,7 +55,6 @@ section article {
     padding: 1em 2em;
     border: 2px solid grey;
     width: fit-content;
-    color: white;
     cursor:pointer;
     box-shadow: 2px 2px 2px rgb(77, 77, 77);
     margin-top: 2em;
@@ -67,7 +62,7 @@ section article {
 }
 .btn_seeMore:hover{
     background-color: white;
-    color: black;
+    color: #18C3A1;
 }
 
 .bg_img {
@@ -76,23 +71,6 @@ section article {
     background-position-x: center;
     background-position-y: center;
 }
-
-.bg_scool {
-    background-image: url("../../../images/efrei.png");
-}
-
-.bg_projet {
-    background-image: url("../../../images/code.jpg");
-}
-
-.bg_antonin {
-    background-image: url("../../../images/IMG-20221111-WA0073.jpg");
-}
-
-.bg_pro {
-    background-image: url("../../../images/openspace.jpg");
-}
-
 
 /* ====== MAIN PAGE ======= */
 body {
@@ -115,3 +93,8 @@ body {
     font-size: 1.2em;
 }
 
+/* ====== PROJECTS ======= */
+.img_language{
+    width: 50px;
+    height: 50px;
+}

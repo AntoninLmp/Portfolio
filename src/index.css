@@ -1,4 +1,7 @@
-/* Tailwind usefully directives */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,500;0,8..144,700;1,8..144,200;1,8..144,300;1,8..144,500;1,8..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap'); /* Tailwind usefully directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,45 +22,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-family: 'Roboto Serif', serif;
 }
 
 @media (prefers-color-scheme: light) {
@@ -75,94 +45,54 @@ button:focus-visible {
 
 /* =================== GLOBAL =================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap');
-/* font-family: 'Bebas Neue', cursive;
-font-family: 'Shadows Into Light', cursive;
-font-family: 'Raleway', sans-serif; */
-
 body{
   background-color: #ffffff;
   color: black;
 }
+
+.font-roboto{
+  font-family: 'Roboto Serif', serif;
+}
+
 /* =================== COLOR =================== */
 .c_green {
-  color: #76c893;
+  color: #18C3A1;
 }
-/* =================== BACKGROUND =================== */
-.bg_black {
-  background-color: black;
+.c_pink {
+  color: #EF767A;
 }
-
-.bg_yellow {
-  background-color: #ffd6a5;
+.c_yellow {
+  color: #EEB868;
 }
-
-.bg_green {
-  background-color: #25a244;
+.bg_green{
+  background-color: #18C3A1;
 }
-
-.bg_blue {
-  background-color: #bde0fe;
+.bg_pink{
+  background-color: #EF767A;
 }
-
-.bg_white {
-  background-color: rgb(212, 226, 209);
+.bg_yellow{
+  background-color: #EEB868;
 }
-
 /* =================== DISPLAY MODES ===================*/
 .d_none {
   display: none;
 }
-.d_flex {
-  display: flex;
-}
 .d_content {
   display: contents;
 }
-.justify_a {
-  justify-content: space-around;
-}
-.justify_b {
-  justify-content: space-between;
-}
-.justify_e {
-  justify-content: space-evenly;
-}
-.justify_c {
-  justify-content: center;
-}
-.align_center {
-  align-items: center;
-}
-.flex_wrap {
-  flex-wrap: wrap;
-}
-.flex_column {
-  flex-direction: column;
-}
-.text_center{
-  text-align: center;
-}
 
+.text_shadow{
+  text-shadow: 1px 1px 2px;
+}
 /* =================== WIDTH/HEIGHT MODES ===================*/
-
-.w_100 {
-  width: 100%;
-}
 .w_30 {
   width: 30%;
 }
-
-.h_100{
-  height: 100%;
+.w-17em{
+  width: 17em;
 }
 .h_70 {
   height: 70%;
-}
-.h_100 {
-  height: 100%;
 }
 .h_252{
   height: 252px;
@@ -222,12 +152,6 @@ body{
   /* font-family: 'Bebas Neue', cursive; */
 }
 
-.Header_desc{
-  font-size: 1.4em;
-  font-style: initial;
-  font-weight: 200;
-  margin-right: 5px;
-}
 .nameBase{
   font-family: 'Raleway';
   text-transform: uppercase;
@@ -403,15 +327,7 @@ footer {
   font-family: 'Raleway', sans-serif;
   margin: 3em 20%;
 }
-#footer_text {
-  font-size: 3em;
-  font-weight: 300;
-}
 #copyright{
   font-size: 1em;
   font-weight: 200;
-}
-.img_logo_footer {
-  width: 100px;
-  height: 100px;
 }

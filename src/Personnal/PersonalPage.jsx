@@ -1,14 +1,12 @@
 import '../index.css';
 
 import Header from "../Global/Header";
-import Navbar from "../Global/Navbar.jsx";
-import Footer from "../Global/Footer.jsx";
+import Footer from "../Global/Footer";
 
 const PersonalPage = () => {
     return (
         <>
             <Header></Header>
-            <Navbar></Navbar>
             <Footer></Footer>
         </>
     );

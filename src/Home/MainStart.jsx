@@ -3,7 +3,6 @@ import { Outlet } from "react-router-dom";
 
 import HeaderHomePage from './HeaderHomePage.jsx';
 import MainContent from './MainContent.jsx';
-import Navbar from '../Global/Navbar.jsx';
 import StartName from './Starter.jsx';
 import Footer from "../Global/Footer.jsx";
 import Header from "../Global/Header";
@@ -27,10 +26,9 @@ const MainPage = () => {
                 {<StartName></StartName>}
             </div>
             <div className={Main}>
-                <div className="fullscreen">
+                <div>
                     <Header></Header>
-                    <header className='d_flex h_100'> 
-                        <Navbar></Navbar>
+                    <header className={'flex h-full'}>
                         <HeaderHomePage></HeaderHomePage>
                     </header>
                 </div>

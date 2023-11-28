@@ -1,4 +1,4 @@
-.img_carrer_entreprise {
+.img_carer {
     height: 45px;
     width: 127px;
 }
@@ -10,4 +10,8 @@
 
 .entreprise p {
     text-align: justify;
+}
+
+.ml-90{
+    margin-left: 90%;
 }
