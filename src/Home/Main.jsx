@@ -1,28 +1,26 @@
-import { Outlet } from "react-router-dom";
 import './css/Home.css';
 import '../index.css';
+
 import HeaderHomePage from './HeaderHomePage.jsx';
-import MainContent from './MainContent.jsx';
 import Header from "../Global/Header.jsx";
-import Footer from "../Global/Footer.jsx";
+import {useEffect} from "react";
 
 
 const MainPage = () => {
+    useEffect(() => {
+        // Applying on mount
+        document.body.style.overflow = "hidden";
+        // Applying on unmount
+        return () => {
+            document.body.style.overflow = "visible";
+        }
+    }, [])
     return (
         <>
-            <div>
-                <div>
-                    <Header></Header>
-                    <header className={'flex h-full'}>
-                        <HeaderHomePage></HeaderHomePage>
-                    </header>
-                </div>
-                <main>
-                    <MainContent></MainContent>
-                </main>
-                <Footer></Footer>
-            </div>
-            <Outlet />
+            <Header></Header>
+            <header className={'flex h-full '}>
+                <HeaderHomePage></HeaderHomePage>
+            </header>
         </>
     );
 };

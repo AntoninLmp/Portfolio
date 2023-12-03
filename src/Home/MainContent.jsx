@@ -305,7 +305,7 @@ function MainContent() {
                     </Link>
                 </div>
             </section>
-            <section className='font_raleway mx_20 padding_1 items-center mb-0 font-light titlePrimary3'>
+            <section className='font_raleway mx_20 p-1 items-center mb-0 font-light titlePrimary3'>
                 <p id='p_homepage'>Ils m'ont fait confiance alors pourquoi pas vous : </p>
                 <div className='flex items-center flex_wrap justify-center'>
                     <img

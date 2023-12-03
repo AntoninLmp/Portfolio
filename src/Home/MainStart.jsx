@@ -1,10 +1,7 @@
-import { useState } from 'react';
-import { Outlet } from "react-router-dom";
+import {useEffect, useState} from 'react';
 
 import HeaderHomePage from './HeaderHomePage.jsx';
-import MainContent from './MainContent.jsx';
 import StartName from './Starter.jsx';
-import Footer from "../Global/Footer.jsx";
 import Header from "../Global/Header";
 
 import '../index.css';
@@ -17,27 +14,27 @@ const MainPage = () => {
 
     setTimeout(() => {
         setHome('d_none');
-        setMain('d_content'); 
+        setMain('d_content overflow-hidden');
     }, 6100);
-
+    useEffect(() => {
+        // Applying on mount
+        document.body.style.overflow = "hidden";
+        // Applying on unmount
+        return () => {
+            document.body.style.overflow = "visible";
+        }
+    }, [])
     return (
         <>
             <div className={Home}>
                 {<StartName></StartName>}
             </div>
             <div className={Main}>
-                <div>
-                    <Header></Header>
-                    <header className={'flex h-full'}>
-                        <HeaderHomePage></HeaderHomePage>
-                    </header>
-                </div>
-                <main>
-                    <MainContent></MainContent>
-                </main>
-                <Footer></Footer>
+                <Header></Header>
+                <header className={'flex h-full'}>
+                    <HeaderHomePage></HeaderHomePage>
+                </header>
             </div>
-            <Outlet />
         </>
     );
 };
