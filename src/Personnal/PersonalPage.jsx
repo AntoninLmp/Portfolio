@@ -3,7 +3,7 @@ import '../index.css';
 import Header from "../Global/Header";
 import imgMe from "../assets/73CF120D-002F-4C37-95F7-39E7E0E42282.png"
 import imgScouts from "../assets/scouts.jpg"
-import imgVoyage from "../assets/IMG_2195.jpg"
+import imgVoyage from "../assets/IMG_0587.jpg"
 import {Outlet} from "react-router-dom";
 
 const PersonalPage = () => {
