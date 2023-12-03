@@ -89,7 +89,7 @@ function CarrerPath() {
                             d'approfondir mes connaissances en matière de bricolage. <br />
                             En tant que caissier, j'ai également appris à tenir et à gérer une caisse. J'ai acquis une grande précision
                             dans la manipulation de l'argent et développé ma capacité à <span className=''>travailler efficacement.</span><br />
-                            Au-delà de ces compétences techniques, cette expérience m'a également appris à <span className=' bold'>être à l'écoute des clients, à répondre à leurs besoins
+                            Au-delà de ces compétences techniques, cette expérience m'a également appris à <span className='font-bold'>être à l'écoute des clients, à répondre à leurs besoins
                             et à leurs attentes, et à travailler en équipe</span>. J'ai eu la chance de travailler avec des collègues passionnés par leur métier et qui
                             m'ont transmis leur savoir-faire. Grâce à cette expérience, j'ai acquis de nouvelles compétences, renforcé ma confiance en moi et cela m'a permis de
                             financer une partie de mes études et d'acquérir une expérience professionnelle très valorisante pour mon CV.
