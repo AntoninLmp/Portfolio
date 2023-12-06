@@ -1,10 +1,12 @@
 import '../index.css'
 import {Link} from "react-router-dom";
 
-function Header() {
+// eslint-disable-next-line react/prop-types
+function Header({ backgroundColor = "#ffffff" }) {
+
     return (
         <>
-            <nav className={"flex justify-between font-roboto font-medium italic items-center pt-4"}>
+            <nav className={`flex justify-between font-roboto font-medium italic items-center pt-4 ${backgroundColor}`}>
                 <Link to={"/Home"} className={"m-5 ml-20 text-black c_green text-3xl"}>Antonin Lampin</Link>
                 <ul className={"flex mr-12"}>
                     <li className={"m-6 transform transition-transform hover:scale-150"}>
