@@ -10,7 +10,7 @@ const ImageWithCaption = ({imgSrc, altText, captionText}) => {
             <img className="h-auto max-w-full rounded-lg" src={imgSrc} alt={altText}/>
             <div className={"h-0"}>
                 <figcaption
-                    className={`transition ease-in-out delay-150 relative bg-gray-300 bottom-14 p-3 
+                    className={`transition ease-in delay-100 relative bg-gray-300 bottom-14 p-3 
                     w-max rounded-xl text-xs font-light ml-3 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
                     {captionText}
                 </figcaption>

@@ -139,120 +139,67 @@ const PersonalPage = () => {
                                     altText={"Photo d'Annecy centre ville"}
                                     captionText={"Annecy, France"}
                                 />
-                                {/*<figure>*/}
-                                {/*    <img className="h-auto max-w-full rounded-lg" src={imgAnnecy1}*/}
-                                {/*         alt="Photo d'Annecy centre ville"/>*/}
-                                {/*    <div className={"h-0 "}>*/}
-                                {/*        <figcaption*/}
-                                {/*            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">*/}
-                                {/*            Annecy, France*/}
-                                {/*        </figcaption>*/}
-                                {/*    </div>*/}
-                                {/*</figure>*/}
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgPrague} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">
-                                            Prague, Tchéquie
-                                        </figcaption>
-                                    </div>
-                                </figure>
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgAnnecy3} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">
-                                            Col de la Forclaz
-                                        </figcaption>
-                                    </div>
-                                </figure>
+                                <ImageWithCaption
+                                    imgSrc={imgPrague}
+                                    altText={"Photo Lenon Wall, Prague"}
+                                    captionText={"Prague, Tchéquie"}
+                                />
+                                <ImageWithCaption
+                                    imgSrc={imgAnnecy3}
+                                    altText={"Photo du Col de la Forclaz"}
+                                    captionText={"Col de la Forclaz, Savoie"}
+                                />
                             </div>
                             <div className="grid gap-4 ">
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgBulgarie} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">
-                                            Баня, Bulgarie
-                                        </figcaption>
-                                    </div>
-                                </figure>
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgCassis} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">
-                                            Cassis, France
-                                        </figcaption>
-                                    </div>
-                                </figure>
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgWien2} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">
-                                            Vienne, Autriche
-                                        </figcaption>
-                                    </div>
-                                </figure>
+                                <ImageWithCaption
+                                    imgSrc={imgBulgarie}
+                                    altText={"Photo Banya en bulgarie"}
+                                    captionText={"Баня, Bulgarie"}
+                                />
+                                <ImageWithCaption
+                                    imgSrc={imgCassis}
+                                    altText={"Photo dans les rues de cassis"}
+                                    captionText={"Cassis, France"}
+                                />
+                                <ImageWithCaption
+                                    imgSrc={imgWien2}
+                                    altText={"Photo de Vienne"}
+                                    captionText={"Vienne, Autriche"}
+                                />
                             </div>
                             <div className="grid gap-4 ">
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgScoutFlag} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">
-                                            Savoie, France
-                                        </figcaption>
-                                    </div>
-                                </figure>
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgScoutsCompas} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">
-                                            Limoges, France
-                                        </figcaption>
-                                    </div>
-                                </figure>
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgWien} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">Annecy,
-                                            France
-                                        </figcaption>
-                                    </div>
-                                </figure>
+                                <ImageWithCaption
+                                    imgSrc={imgScoutFlag}
+                                    altText={"Photo Savoie en France"}
+                                    captionText={"Savoie, France"}
+                                />
+                                <ImageWithCaption
+                                    imgSrc={imgScoutsCompas}
+                                    altText={"Photo limoges, France"}
+                                    captionText={"Limoges, France"}
+                                />
+                                <ImageWithCaption
+                                    imgSrc={imgWien}
+                                    altText={"Photo de Vienne"}
+                                    captionText={"Vienne, Autriche"}
+                                />
                             </div>
                             <div className="grid gap-4 ">
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgNormandie} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">
-                                            Hautôt-sur-mer, France
-                                        </figcaption>
-                                    </div>
-                                </figure>
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgCar1} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3"> France
-                                        </figcaption>
-                                    </div>
-                                </figure>
-                                <figure>
-                                    <img className="h-auto max-w-full rounded-lg" src={imgScoutFire} alt=""/>
-                                    <div className={"h-0"}>
-                                        <figcaption
-                                            className="relative bg-gray-300 bottom-14 p-3 w-max rounded-xl text-xs font-light ml-3">
-                                            Quelque part dans la nuit
-                                        </figcaption>
-                                    </div>
-                                </figure>
+                                <ImageWithCaption
+                                    imgSrc={imgNormandie}
+                                    altText={"Photo Hautôt-sur-mer, France"}
+                                    captionText={"Hautôt-sur-mer, France"}
+                                />
+                                <ImageWithCaption
+                                    imgSrc={imgCar1}
+                                    altText={"Photo limoges, France"}
+                                    captionText={"Nord-Pas-Calais, France"}
+                                />
+                                <ImageWithCaption
+                                    imgSrc={imgScoutFire}
+                                    altText={"Photo d'un feu de bois"}
+                                    captionText={"Quelque part dans la nuit"}
+                                />
                             </div>
                         </div>
                     </div>
