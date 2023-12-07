@@ -17,9 +17,9 @@ const MainPage = () => {
     }, [])
     return (
         <>
-            <Header></Header>
+            <Header />
             <header className={'flex h-full '}>
-                <HeaderHomePage></HeaderHomePage>
+                <HeaderHomePage />
             </header>
         </>
     );

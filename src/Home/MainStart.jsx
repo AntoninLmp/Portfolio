@@ -27,12 +27,12 @@ const MainPage = () => {
     return (
         <>
             <div className={Home}>
-                {<StartName></StartName>}
+                {<StartName />}
             </div>
             <div className={Main}>
-                <Header></Header>
+                <Header />
                 <header className={'flex h-full'}>
-                    <HeaderHomePage></HeaderHomePage>
+                    <HeaderHomePage />
                 </header>
             </div>
         </>
