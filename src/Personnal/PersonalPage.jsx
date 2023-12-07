@@ -20,8 +20,19 @@ import imgCar1 from "../assets/car1.jpg";
 import imgPrague from "../assets/Prague1.jpg";
 import imgBulgarie from "../assets/Bulgarie1.jpg";
 import ImageWithCaption from "./ImageWithCaption.jsx";
+import Footer from "../Global/Footer.jsx";
+import {useEffect, useState} from "react";
 
 const PersonalPage = () => {
+    const [isFirefox, setIsFirefox] = useState(false);
+
+    useEffect(() => {
+        // Détecter si le navigateur est Firefox
+        const isFirefoxBrowser = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+        // Mettre à jour l'état en conséquence
+        setIsFirefox(isFirefoxBrowser);
+    }, []);
+
     return (
         <>
             <Header backgroundColor="bg-green-50"/>
@@ -132,7 +143,7 @@ const PersonalPage = () => {
                 </section>
                 <section className="mx-20">
                     <div>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-baseline">
+                        <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 ${isFirefox ? 'items-stretch' : 'items-baseline'}`}>
                             <div className="grid gap-4 ">
                                 <ImageWithCaption
                                     imgSrc={imgAnnecy1}
@@ -227,6 +238,7 @@ const PersonalPage = () => {
                     </p>
                 </section>
             </section>
+            <Footer backgroundColor={"bg-green-50"}/>
         </>
     )
         ;

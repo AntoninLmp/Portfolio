@@ -113,6 +113,10 @@ body{
 .h_252{
   height: 252px;
 }
+.imdSchool{
+  width: 250px;
+  height: 250px;
+}
 
 /* =================== MARGIN MODES ===================*/
 .fullscreen {
@@ -152,6 +156,9 @@ body{
 }
 .ml_15{
   margin-left: 15%;
+}
+.ml_85{
+  margin-left: 85%;
 }
 .h_photo{
   height: 350px;
@@ -348,14 +355,3 @@ a {
   border-top: #25a244 solid 3px;
 }
 
-/* =================== Footer =================== */
-
-footer {
-  border-top: solid green 1px;
-  font-family: 'Raleway', sans-serif;
-  margin: 3em 20%;
-}
-#copyright{
-  font-size: 1em;
-  font-weight: 200;
-}
