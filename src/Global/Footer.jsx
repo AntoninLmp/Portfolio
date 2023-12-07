@@ -1,10 +1,11 @@
 import "../index.css"
 
-const Footer = () => {
+// eslint-disable-next-line react/prop-types
+function Footer ({ backgroundColor = "#ffffff" }) {
     return (
-        <footer className={"text-center"}>
-                <p className={"m-8 font-light text-5xl"}>Travaillons <span className='c_green'>ensemble</span> !</p>
-                <div className={'flex align-middle justify-evenly mb_4'}>
+        <footer className={`text-center ${backgroundColor}`}>
+                {/*<p className={"m-8 font-light text-5xl"}>Travaillons <span className='c_green'>ensemble</span> !</p>*/}
+                <div className={'flex align-middle justify-evenly mx-72 py-10 '}>
                     <a href='https://www.linkedin.com/in/antonin-lampin-346a2a1a4/'>
                         <img src='https://cdn-icons-png.flaticon.com/256/38/38669.png' alt='Linkedin Logo' className={'w-20 h-20'} />
                     </a>
@@ -15,9 +16,9 @@ const Footer = () => {
                         <img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' alt='GitHub Logo' className={'w-20 h-20'} />
                     </a>
                 </div>
-                <p id="copyright">© 2023 - Antonin Lampin - Software developpeur</p>
+                <p className={"p-5 text-base font-extralight"}>© 2023 - Antonin Lampin - Software developpeur</p>
         </footer>
     );
-};
+}
 
 export default Footer;
