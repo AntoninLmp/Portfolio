@@ -1,10 +1,10 @@
 import '../index.css';
 
-import Header from "../Global/Header";
-import Footer from "../Global/Footer.jsx";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
 import {Link} from "react-router-dom";
-import ProjectExample from "./ProjectExample.jsx";
-import img_ordo from "../../public/ordonnancement.png";
+import ProjectExample from "../components/ProjectExample";
+import img_ordo from "../assets/ordonnancement.png";
 import {useState} from "react";
 
 const Project = () => {

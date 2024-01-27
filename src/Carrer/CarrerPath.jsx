@@ -2,14 +2,14 @@ import '../index.css';
 import './CarrerPath.css';
 import {useState} from "react";
 
-import Header from "../Global/Header";
-import Footer from '../Global/Footer.jsx';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-import restalliance from '../../public/restalliance-rmbg.png';
-import thales from '../../public/thales.png';
-import Mcdonald from '../../public/McDonalds_2-rmbg.png';
-import siarce from '../../public/siarce-rmbg.png';
-import weldom from '../../public/weldom_rmbg.png';
+import restalliance from '../assets/restalliance-rmbg.png';
+import thales from '../assets/thales.png';
+import Mcdonald from '../assets/McDonalds_2-rmbg.png';
+import siarce from '../assets/siarce-rmbg.png';
+import weldom from '../assets/weldom_rmbg.png';
 
 
 function CarrerPath() {

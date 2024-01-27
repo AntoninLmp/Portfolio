@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 
 import HeaderHomePage from './HeaderHomePage.jsx';
 import StartName from './Starter.jsx';
-import Header from "../Global/Header";
+import Header from "../components/Header.jsx";
 
 import '../index.css';
 

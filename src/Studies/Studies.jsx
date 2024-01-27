@@ -1,8 +1,8 @@
 import '../index.css';
 
-import Header from "../Global/Header.jsx";
-import Footer from "../Global/Footer.jsx";
-import SchoolWithCaption from "./SchoolWithCaption.jsx";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+import SchoolWithCaption from "../components/SchoolWithCaption.jsx";
 
 const Studies = () => {
     return (

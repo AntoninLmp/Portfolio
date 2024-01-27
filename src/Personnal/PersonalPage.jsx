@@ -1,6 +1,6 @@
 import '../index.css';
 
-import Header from "../Global/Header";
+import Header from "../components/Header.jsx";
 import imgMe from "../assets/73CF120D-002F-4C37-95F7-39E7E0E42282.png"
 
 import imgScouts from "../assets/Scouts.jpg"
@@ -19,8 +19,8 @@ import imgNormandie from "../assets/Normandie.jpg";
 import imgCar1 from "../assets/car1.jpg";
 import imgPrague from "../assets/Prague1.jpg";
 import imgBulgarie from "../assets/Bulgarie1.jpg";
-import ImageWithCaption from "./ImageWithCaption.jsx";
-import Footer from "../Global/Footer.jsx";
+import ImageWithCaption from "../components/ImageWithCaption.jsx";
+import Footer from "../components/Footer.jsx";
 import {useEffect, useState} from "react";
 
 const PersonalPage = () => {
