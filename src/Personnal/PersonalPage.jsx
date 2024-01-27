@@ -39,6 +39,7 @@ const PersonalPage = () => {
             <section className={"text-center bg-green-50"}>
                 <div className={"mx_30 bg-amber-50 rounded-full py-3"}>
                     <h1 className={"text-8xl font-Display c_yellow my-20"}>I'm Antonin.</h1>
+                    <img src={"https://www.svgrepo.com/show/422032/scout-hat.svg"} alt={""} className={"w-16 absolute top-20 ml_35"}/>
                 </div>
                 <section className={"flex justify-center mt-28"}>
                     <div className={"bg-green-200 w-max pt-8 rounded-t-full font-Display"}>
