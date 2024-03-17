@@ -22,6 +22,8 @@ import imgBulgarie from "../assets/Bulgarie1.jpg";
 import ImageWithCaption from "../components/ImageWithCaption.jsx";
 import Footer from "../components/Footer.jsx";
 import {useEffect, useState} from "react";
+import CustomArticle from "../components/CustomArticle.jsx";
+import data from '../../public/locales/fr.json';
 
 const PersonalPage = () => {
     const [isFirefox, setIsFirefox] = useState(false);
@@ -38,23 +40,20 @@ const PersonalPage = () => {
             <Header backgroundColor="bg-green-50"/>
             <section className={"text-center bg-green-50"}>
                 <div className={"mx_30 bg-amber-50 rounded-full py-3"}>
-                    <h1 className={"text-8xl font-Display c_yellow my-20"}>I'm Antonin.</h1>
+                    <h1 className={"text-8xl font-Display c_yellow my-20"}>{data.personal.page_title}</h1>
                     <img src={"https://www.svgrepo.com/show/422032/scout-hat.svg"} alt={""} className={"w-16 absolute top-20 ml_35"}/>
                 </div>
                 <section className={"flex flex-col justify-center mt-28"}>
                     <section className={"flex justify-center"}>
                         <div className={"bg-green-200 w-max pt-8 rounded-t-full font-Display"}>
                             <img src={imgMe} alt={"Picture of the creator"} className={"w-56 m-auto "}/>
-                            {/*<p className={"text-left"}>Picture of me. </p>*/}
                         </div>
                         <div className={"text-justify mx-16 max-w-lg flex flex-col justify-end"}>
                             <h1 className={"text-3xl c_green my-8"}>
-                                Je suis ingénieur en informatique <br/> Je me passionne pour les voyages, les voitures
-                                et la nature.
+                                {data.personal.header.title}
                             </h1>
                             <p className={"italic font-light  text-lg"}>
-                                Salut ! Je m'appelle Antonin Lampin, je me passionne pour l'informatique et la création
-                                de projets innovants. J'ai fait une école d'ingénieur dans le numérique...
+                                {data.personal.header.subtitle}
                             </p>
                         </div>
                         <img
@@ -63,72 +62,61 @@ const PersonalPage = () => {
                     </section>
                     <section className={"flex justify-center pt-6"}>
                         <p className={"font-light text-justify text-base max-w-5xl"}>
-                            Bienvenue dans mon <span className={"c_green italic"}>univers</span>, où la curiosité, la
-                            créativité et le partage sont les piliers fondamentaux.
-                            À l'aube de mes <span className={"c_pink italic"}>23 ans</span>, je m'apprête à conclure mes
-                            études en ingénierie dans le domaine du numérique. Mon parcours, tant professionnel que
-                            personnel, est jalonné par ma passion pour l'apprentissage, l'exploration et le partage des
-                            connaissances.Je nourris une réelle passion pour les projets à impact sociétal positif, et
-                            je suis fermement convaincu que l'innovation peut constituer un vecteur de changement
-                            puissant.<br/><br/>
+                            {data.personal.header.about.paragraph_1.part1}
+                            <span className={"c_green italic"}>{data.personal.header.about.paragraph_1.part2}</span>
+                            {data.personal.header.about.paragraph_1.part3} <br/><br/>
 
-                            En dehors de mes activités professionnelles, j'aime <span className={"c_yellow"}>
-                            partager des moments de convivialité</span> en compagnie de mes amis, explorant de nouveaux
-                            endroits et expériences. <span className={"c_pink italic"}>Voyager est une de mes
-                            grandes passions</span>; découvrir de nouvelles cultures, rencontrer des personnes fascinantes et
-                            contempler des paysages époustouflants nourrit mon esprit d'aventure et
-                            d'émerveillement.<br/><br/>
+                            {data.personal.header.about.paragraph_2.part1}
+                            <span className={"c_pink italic"}> {data.personal.header.about.paragraph_2.part2} </span>
+                            {data.personal.header.about.paragraph_2.part3} <br/><br/>
 
-                            J'apprécie également les échanges avec autrui, car je suis convaincu que chaque discussion
-                            est une opportunité d'apprentissage. <span className={"c_green italic"}>La diversité des
-                            perspectives et des expériences enrichit notre compréhension du monde</span> qui nous
-                            entoure, et j'aime me nourrir de ces interactions pour continuer à grandir personnellement
-                            et professionnellement.<br/><br/>
+                            {data.personal.header.about.paragraph_3.part1}
+                            <span className={"c_yellow"}> {data.personal.header.about.paragraph_3.part2} </span>
+                            {data.personal.header.about.paragraph_3.part3}
+                            <span className={"c_pink italic"}>{data.personal.header.about.paragraph_3.part4}</span>
+                            {data.personal.header.about.paragraph_3.part5} <br/><br/>
 
-                            Mon portfolio témoigne de mon engagement en faveur de la diversité et de la création de
-                            solutions novatrices.
+                            {data.personal.header.about.paragraph_4.part1}
+                            <span className={"c_green italic"}>{data.personal.header.about.paragraph_4.part2}</span>
+                            {data.personal.header.about.paragraph_4.part3} <br/><br/>
+
+                            {data.personal.header.about.paragraph_5.part1}
                         </p>
                     </section>
                 </section>
 
                 <section className={"mt-32"} id={"section_moi"}>
                     <section className={"flex mx-52"}>
-                        <article className={"bg-pink-100 text-right w-full m-10 bd_rad64px min_h_455 flex_1"}>
-                            <div className={"m-8 font-Display"}>
-                                <h1 className={"font-normal text-2xl"}>🚴🏽 Vélo en forêt, Vtt</h1>
-                                <h2>Sport</h2>
-                            </div>
-                            <img
-                                src={"https://media.ucpa.com/image/upload/f_auto/t_UCPA/UCPA-SPORT-NATURE/France/00043747.jpg"}
-                                alt={"Image de vélo"} className={"ml_15 w_85 bd_rad_br_64px h_photo object-cover"}/>
-                        </article>
-                        <article className={"bg-amber-100 text-right w-full m-10 bd_rad64px min_h_455 flex_2"}>
-                            <div className={"m-8 font-Display"}>
-                                <h1 className={"font-normal text-2xl"}>⚜️ Scouts et Guides de France</h1>
-                                <h2>Association</h2>
-                            </div>
-                            <img src={imgScouts} alt={"Image de vélo"}
-                                 className={"ml_10 w_90 bd_rad_br_64px h_photo object-cover"}/>
-                        </article>
+                        <CustomArticle
+                            bgColor="bg-pink-100"
+                            flexNumber="1"
+                            titre="🚴🏽 Vélo en forêt, Vtt"
+                            subtitle="Sport"
+                            imgSrc="https://media.ucpa.com/image/upload/f_auto/t_UCPA/UCPA-SPORT-NATURE/France/00043747.jpg"
+                         />
+                        <CustomArticle
+                            bgColor="bg-amber-100"
+                            flexNumber="2"
+                            titre="⚜️ Scouts et Guides de France"
+                            subtitle="Association"
+                            imgSrc={imgScouts}
+                        />
                     </section>
                     <section className={"flex mx-52"}>
-                        <article className={"bg-blue-100 text-right w-full m-10 bd_rad64px min_h_455 flex_2"}>
-                            <div className={"m-8 font-Display"}>
-                                <h1 className={"font-normal text-2xl"}>🛩️ Voyage</h1>
-                                <h2>Hobbie</h2>
-                            </div>
-                            <img src={imgVoyage} alt={"Image de la ciotat"}
-                                 className={"ml_10 w_90 bd_rad_br_64px h_photo object-cover"}/>
-                        </article>
-                        <article className={"bg-green-200 text-right w-full m-10 bd_rad64px min_h_455 flex_1"}>
-                            <div className={"m-8 font-Display"}>
-                                <h1 className={"font-normal text-2xl"}>🎧Musique</h1>
-                                <h2>Une passion</h2>
-                            </div>
-                            <img src={"https://media.timeout.com/images/105976410/750/562/image.jpg"}
-                                 alt={"Image d'un concert"}
-                                 className={"ml_15 w_85 bd_rad_br_64px h_photo object-cover"}/>
-                        </article>
+                        <CustomArticle
+                            bgColor="bg-blue-100"
+                            flexNumber="2"
+                            titre="🛩️ Voyage"
+                            subtitle="Hobbie"
+                            imgSrc={imgVoyage}
+                        />
+                        <CustomArticle
+                            bgColor="bg-green-200"
+                            flexNumber="1"
+                            titre="🎧Musique"
+                            subtitle="Une passion"
+                            imgSrc={"https://media.timeout.com/images/105976410/750/562/image.jpg"}
+                        />
                     </section>
                 </section>
 
@@ -136,28 +124,19 @@ const PersonalPage = () => {
             <section className={"text-center bg-green-50"}>
                 <section className={"mx_25 py-10"}>
                     <p className={"font-light text-justify text-base"}>
-                        Depuis l'âge de 10 ans, je suis impliqué dans le mouvement scout, une aventure qui a façonné ma
-                        personnalité et m'a permis d'obtenir de formidable valeurs. Pendant ces 13 années en tant
-                        que scout, j'ai eu l'opportunité unique de monter des projets inspirants et de rencontrer des
-                        individus venant d'horizons divers. Par exemple <span className='c_green'>j'ai partagé le
-                        quotidien de personnes venu demander l'asile en France</span>, ils m'ont raconter leur histoire,
-                        m'ont appris un peu de leur langue et m'ont fait découvrir leur culture. J'ai également eu
-                        l'occasion de participer à des <span className='c_pink'>projets de solidarité internationale,
-                        notamment en Bulgarie</span>, où j'ai pu aider à la rénovation d'une école et à la mise en
-                        place d'activités pour les enfants. Ces expériences m'ont enseigné que <span className='c_yellow'>
-                        chacun a quelque chose d'unique à offrir</span>, et j'ai toujours été avide d'apprendre de ceux que je
-                        rencontre.<br/><br/>
+                        {data.personal.description.paragraph.part1}
+                        <span className='c_green'>{data.personal.description.paragraph.part2}</span>
+                        {data.personal.description.paragraph.part3}
+                        <span className='c_pink'>{data.personal.description.paragraph.part4}</span>
+                        {data.personal.description.paragraph.part5}
+                        <span className='c_yellow'>{data.personal.description.paragraph.part6}</span>,
+                        {data.personal.description.paragraph.part7} <br/><br/>
 
-                        Au cours de mes voyages à travers l'Europe, j'ai eu l'occasion de découvrir et apprendre à
-                        connaître
-                        d'autres cultures. Ces expériences m'ont profondément touché, renforçant ma
-                        conviction que <span className='c_green'>la diversité est une richesse </span>et que chacun a le
-                        pouvoir de faire une différence
-                        positive dans le monde.<br/><br/>
+                        {data.personal.description.paragraph.part8}
+                        <span className='c_green'>{data.personal.description.paragraph.part9}</span>
+                        {data.personal.description.paragraph.part10}<br/><br/>
 
-                        Voyager a été pour moi plus qu'une simple aventure, c'était une école de vie. Cela m'a permis de
-                        grandir, de m'ouvrir à de nouvelles perspectives et de développer une profonde appréciation pour
-                        la nature et ses merveilles. <br/>
+                        {data.personal.description.paragraph.part11} <br/>
                     </p>
                 </section>
                 <section className="mx-20">
