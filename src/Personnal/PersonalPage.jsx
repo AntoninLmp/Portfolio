@@ -2,7 +2,6 @@ import '../index.css';
 
 import Header from "../components/Header.jsx";
 import imgMe from "../assets/73CF120D-002F-4C37-95F7-39E7E0E42282.png"
-
 import imgScouts from "../assets/Scouts.jpg"
 import imgVoyage from "../assets/IMG_0585.jpg"
 
@@ -14,11 +13,12 @@ import imgScoutFire from "../assets/Scouts2.jpg";
 import imgCassis from "../assets/CassisStreet.jpg";
 import imgWien from "../assets/Wien.jpg";
 import imgWien2 from "../assets/Wien2.jpg";
-import imgScoutsCompas from "../assets/Scouts_compas.jpg";
-import imgNormandie from "../assets/Normandie.jpg";
+import imgScout from "../assets/Scouts_compas.jpg";
+import imgNormandy from "../assets/Normandie.jpg";
 import imgCar1 from "../assets/car1.jpg";
 import imgPrague from "../assets/Prague1.jpg";
-import imgBulgarie from "../assets/Bulgarie1.jpg";
+import imgBulgaria from "../assets/Bulgarie1.jpg";
+
 import ImageWithCaption from "../components/ImageWithCaption.jsx";
 import Footer from "../components/Footer.jsx";
 import {useEffect, useState} from "react";
@@ -131,11 +131,9 @@ const PersonalPage = () => {
                         {data.personal.description.paragraph.part5}
                         <span className='c_yellow'>{data.personal.description.paragraph.part6}</span>,
                         {data.personal.description.paragraph.part7} <br/><br/>
-
                         {data.personal.description.paragraph.part8}
                         <span className='c_green'>{data.personal.description.paragraph.part9}</span>
                         {data.personal.description.paragraph.part10}<br/><br/>
-
                         {data.personal.description.paragraph.part11} <br/>
                     </p>
                 </section>
@@ -161,7 +159,7 @@ const PersonalPage = () => {
                             </div>
                             <div className="grid gap-4 ">
                                 <ImageWithCaption
-                                    imgSrc={imgBulgarie}
+                                    imgSrc={imgBulgaria}
                                     altText={"Photo Banya en bulgarie"}
                                     captionText={"Баня, Bulgarie"}
                                 />
@@ -183,7 +181,7 @@ const PersonalPage = () => {
                                     captionText={"Savoie, France"}
                                 />
                                 <ImageWithCaption
-                                    imgSrc={imgScoutsCompas}
+                                    imgSrc={imgScout}
                                     altText={"Photo limoges, France"}
                                     captionText={"Limoges, France"}
                                 />
@@ -195,7 +193,7 @@ const PersonalPage = () => {
                             </div>
                             <div className="grid gap-4 ">
                                 <ImageWithCaption
-                                    imgSrc={imgNormandie}
+                                    imgSrc={imgNormandy}
                                     altText={"Photo Hautôt-sur-mer, France"}
                                     captionText={"Hautôt-sur-mer, France"}
                                 />
