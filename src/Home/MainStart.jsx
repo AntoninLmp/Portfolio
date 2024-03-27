@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 
 import HeaderHomePage from './HeaderHomePage.jsx';
 import StartName from './Starter.jsx';
-import Header from "../Global/Header";
+import Header from "../components/Header.jsx";
 
 import '../index.css';
 
@@ -27,12 +27,12 @@ const MainPage = () => {
     return (
         <>
             <div className={Home}>
-                {<StartName></StartName>}
+                {<StartName />}
             </div>
             <div className={Main}>
-                <Header></Header>
+                <Header />
                 <header className={'flex h-full'}>
-                    <HeaderHomePage></HeaderHomePage>
+                    <HeaderHomePage />
                 </header>
             </div>
         </>

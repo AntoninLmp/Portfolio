@@ -1,6 +1,6 @@
 import {useState} from 'react';
+import PropTypes from "prop-types";
 
-// eslint-disable-next-line react/prop-types
 const ImageWithCaption = ({imgSrc, altText, captionText}) => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -17,6 +17,12 @@ const ImageWithCaption = ({imgSrc, altText, captionText}) => {
             </div>
         </figure>
     );
+};
+
+ImageWithCaption.propTypes = {
+    imgSrc: PropTypes.string.isRequired,
+    altText: PropTypes.string.isRequired,
+    captionText: PropTypes.string.isRequired
 };
 
 export default ImageWithCaption;
