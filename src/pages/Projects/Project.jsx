@@ -1,10 +1,10 @@
-import '../index.css';
+import '../../index.css';
 
-import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
+import Header from "../../components/Header.jsx";
+import Footer from "../../components/Footer.jsx";
 import {Link} from "react-router-dom";
-import ProjectExample from "../components/ProjectExample";
-import img_ordonnancement from "../assets/ordonnancement.png";
+import ProjectExample from "../../components/ProjectExample.jsx";
+import img_ordonnancement from "../../assets/ordonnancement.png";
 import {useState} from "react";
 
 const Project = () => {
@@ -89,54 +89,54 @@ const Project = () => {
                                 <button className='flex flex-col items-center' onClick={() => toggleButton("CButton")}>
                                     <img
                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/280px-C_Programming_Language.svg.png"
-                                        className={'img_language mb-5'} alt={"CButton"}/>
+                                        className={'w-14 h-14 mb-5'} alt={"CButton"}/>
                                     <p>C</p>
                                 </button>
                                 <button className={'flex flex-col items-center'}
                                         onClick={() => toggleButton("JavaButton")}>
                                     <img
                                         src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png"
-                                        className={'img_language mb-5'} alt={"JavaButton"}/>
+                                        className={'w-14 h-14 mb-5'} alt={"JavaButton"}/>
                                     <p>Java</p>
                                 </button>
                                 <button className={'flex flex-col items-center'}
                                         onClick={() => toggleButton("PythonButton")}>
                                     <img
                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
-                                        className={'img_language mb-5'} alt={"PythonButton"}/>
+                                        className={'w-14 h-14 mb-5'} alt={"PythonButton"}/>
                                     <p>Python</p>
                                 </button>
                                 <button className={'flex flex-col items-center'}
                                         onClick={() => toggleButton("WebButton")}>
                                     <img src="https://www.shareicon.net/data/2016/09/09/827488_browser_512x512.png"
-                                         className={'img_language mb-5'} alt={"WebSiteButton"}/>
+                                         className={'w-14 h-14 mb-5'} alt={"WebSiteButton"}/>
                                     <p>WebSite</p>
                                 </button>
                                 <button className={'flex flex-col items-center'}
                                         onClick={() => toggleButton("NetButton")}>
                                     <img
                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png"
-                                        className={'img_language mb-5'} alt={"NetButton"}/>
+                                        className={'w-14 h-14 mb-5'} alt={"NetButton"}/>
                                     <p>C# & .NET</p>
                                 </button>
                                 <button className={'flex flex-col items-center'}
                                         onClick={() => toggleButton("AndroidButton")}>
                                     <img
                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Android_Studio_Logo_%282023%29.svg/1200px-Android_Studio_Logo_%282023%29.svg.png"
-                                        className={'img_language mb-5'} alt={"AndroidButton"}/>
+                                        className={'w-14 h-14 mb-5'} alt={"AndroidButton"}/>
                                     <p>Android Studio</p>
                                 </button>
                                 <button className={'flex flex-col items-center'}
                                         onClick={() => toggleButton("ReactButton")}>
                                     <img
                                         src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
-                                        className={'img_language mb-5'} alt={"ReactButtons"}/>
+                                        className={'w-14 h-14 mb-5'} alt={"ReactButtons"}/>
                                     <p>React</p>
                                 </button>
                                 <Link to={"/Projects"}>
                                     <button className={'flex flex-col items-center'}>
                                         <img src="https://cdn-icons-png.flaticon.com/512/57/57013.png"
-                                             className={'img_language mb-5'} alt={"ProjectButton"}/>
+                                             className={'w-14 h-14 mb-5'} alt={"ProjectButton"}/>
                                         <p>Other</p>
                                     </button>
                                 </Link>

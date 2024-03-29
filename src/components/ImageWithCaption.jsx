@@ -20,7 +20,7 @@ const ImageWithCaption = ({imgSrc, altText, captionText}) => {
 };
 
 ImageWithCaption.propTypes = {
-    imgSrc: PropTypes.string.isRequired,
+    imgSrc: PropTypes.any.isRequired,
     altText: PropTypes.string.isRequired,
     captionText: PropTypes.string.isRequired
 };

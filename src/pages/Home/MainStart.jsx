@@ -2,15 +2,14 @@ import {useEffect, useState} from 'react';
 
 import HeaderHomePage from './HeaderHomePage.jsx';
 import StartName from './Starter.jsx';
-import Header from "../components/Header.jsx";
-
-import '../index.css';
+import Header from "../../components/Header.jsx";
+import '../../index.css';
 
 
 const MainPage = () => {
 
     const [Home, setHome] = useState('d_content');
-    const [Main, setMain] = useState('d_none');
+    const [Main, setMain] = useState(' d_none');
 
     setTimeout(() => {
         setHome('d_none');

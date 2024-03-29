@@ -4,7 +4,7 @@ const ProjectExample = ({projectName, imageSource, content, githubLink}) => (
     <section>
         <h1 className={'m-6 font-semibold italic'}>{projectName}</h1>
         <div className={'ml-8 flex items-center'}>
-            <img src={imageSource} className={'w-17em'} alt={'project Image example'}/>
+            <img src={imageSource} className={'w-80'} alt={'project Image example'}/>
             {content}
         </div>
         <div className={'py-5 flex justify-end items-center mx-10 gap-10'}>

@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route }
     from 'react-router-dom';
-import MainStart from './Home/MainStart.jsx';
-import Main from './Home/Main.jsx';
-import Carrer from './Carrer/Carrer.jsx';
-import PersonalPage from './Personnal/PersonalPage.jsx';
-import Studies from './Studies/Studies.jsx';
-import Project from './Projects/Project.jsx';
+import MainStart from './pages/Home/MainStart.jsx';
+import Main from './pages/Home/Main.jsx';
+import Career from './pages/Carrer/Career.jsx';
+import PersonalPage from './pages/Personnal/PersonalPage.jsx';
+import Studies from './pages/Studies/Studies.jsx';
+import Project from './pages/Projects/Project.jsx';
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
                 <Route>
                     <Route index element={<MainStart/>} />
                     <Route path={"/Home"} element={<Main/>} />
-                    <Route path={"/parcoursProfessionnel"} element={<Carrer/>} />
+                    <Route path={"/parcoursProfessionnel"} element={<Career/>} />
                     <Route path={"/AntoninLampin"} element={<PersonalPage/>} />
                     <Route path={"/Studies"} element={<Studies/>} />
                     <Route path={"/Projects"} element={<Project/>} />

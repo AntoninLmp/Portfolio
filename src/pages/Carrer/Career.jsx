@@ -1,17 +1,15 @@
-import '../index.css';
+import '../../index.css';
+import Header from "../../components/Header.jsx";
+import Footer from "../../components/Footer.jsx";
+import JobArticle from "../../components/JobArticle.jsx";
+// Importing images
+import restalliance from '../../assets/restalliance-rmbg.png';
+import thales from '../../assets/thales.png';
+import Mcdonald from '../../assets/McDonalds_2-rmbg.png';
+import siarce from '../../assets/siarce-rmbg.png';
+import weldom from '../../assets/weldom_rmbg.png';
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-
-import restalliance from '../assets/restalliance-rmbg.png';
-import thales from '../assets/thales.png';
-import Mcdonald from '../assets/McDonalds_2-rmbg.png';
-import siarce from '../assets/siarce-rmbg.png';
-import weldom from '../assets/weldom_rmbg.png';
-import JobArticle from "./JobArticle.jsx";
-
-
-function Carrer() {
+function Career() {
 
     return (
         <>
@@ -85,14 +83,7 @@ function Carrer() {
                         text_3={"Expérience Enrichissante"}
                         flexNumber={"1"} />
 
-                   {/* <article className={'entreprise rounded-xl mb-10 bg_yellow ${isTextThalesVisible ? expanded : }'}>
-                        <div className={'flex items-center'}>
-                            <img src={thales} alt='Thales Logo' className={'img_carer mr-2'}/>
-                            <div className={'my-5'}>
-                                <h1 className={'text-lg italic'}>Alternant développeur informatique </h1>
-                                <h2>De 2022 à aujourd'hui</h2>
-                            </div>
-                        </div>
+                   {/*
                         <p className={'font-serif'}>
                             Je suis actuellement en <span
                             className=''>alternance chez Thales Land Air System à Limours</span>, où je travaille sur la
@@ -118,22 +109,7 @@ function Carrer() {
                                 militaires est un défi passionnant.
                             </p>
                         ) : null}
-                        <button className={'bg-gray-200 hover:bg-gray-300 p-3 px-5 rounded-full text-center'}
-                                onClick={toggleTextThalesVisibility}>
-                            {isTextThalesVisible ? '-' : '+'}
-                        </button>
-                    </article>
 
-
-                    <article className={'entreprise rounded-xl mb-10 bg_pink'}>
-                        <div className={'flex items-center'}>
-                            <img src={weldom} alt='Weldom Logo' className={'img_carer mr-2'}/>
-                            <div className={'my-5'}>
-                                <h1 className={'text-lg italic font-roboto'}>Conseiller de vente - CDI </h1>
-                                <h2>De 2020 à 2021, les week-ends</h2>
-                            </div>
-                        </div>
-                        <p className={'font-serif'}>
                             <span className=''>Pendant mes études</span>, j'ai travaillé en tant que vendeur et
                             caissier.
                             J'ai eu l'opportunité de <span className=''>conseiller les clients</span> sur les différents
@@ -160,20 +136,7 @@ function Carrer() {
                                 valorisante pour mon CV.
                             </p>
                         ) : null}
-                        <button className={'bg-gray-200 hover:bg-gray-300 p-3 px-5 rounded-full text-center ml-90'}
-                                id={"thales_plus"} onClick={toggleTextWeldomVisibility}>
-                            {isTextWeldomVisible ? '-' : '+'}
-                        </button>
-                    </article>
 
-                    <article className={'entreprise rounded-xl mb-10 bg_green'}>
-                        <div className={'flex items-center'}>
-                            <img src={restalliance} alt='Restalliance Logo' className='img_carer mr-2'/>
-                            <div className={'my-5'}>
-                                <h1 className={'text-lg italic'}>Employé de restauration</h1>
-                                <h2>Durant l'été 2022</h2>
-                            </div>
-                        </div>
                         <p className={'font-serif'}>
                             J'ai travailler dans le secteur de la restauration collective pendant plusieurs semaines,
                             notamment au sein du prestigieux hôtel Le Normandie à Deauville, ainsi qu'au Golf de
@@ -193,26 +156,12 @@ function Carrer() {
                             </p>
                         ) : null}
 
-                        <button className={'bg-gray-200 hover:bg-gray-300 p-3 px-5 rounded-full text-center ml-90'}
-                                onClick={toggleTextRestallianceVisibility}>
-                            {isTextRestallianceVisible ? '-' : '+'}
-                        </button>
-                    </article>
-                    <article className={'entreprise rounded-xl mb-10 bg_yellow'}>
-                        <div className={'flex items-center'}>
-                            <img src={Mcdonald} alt='Mcdonald Logo' className='img_carer mr-2'/>
-                            <div className={'my-5'}>
-                                <h1 className={'text-lg italic'}>Equipier polyvalent</h1>
-                                <h2>De Avril à Septembre - 2019</h2>
-                            </div>
-                        </div>
                         <p className={'font-serif'}>
                             J'ai travaillé chez McDonald's pendant 6 mois et cette expérience a été très enrichissante.
                             En tant qu'équipier polyvalent,
                             j'ai occupé différents postes : <span className=''>préparation des aliments, service au comptoir, prise de commandes et nettoyage.</span>
                             <br/>
                         </p>
-                        {isTextMcdonaldVisible ? (
                             <p className={'font-serif'}>
                                 Cette expérience m'a appris à<span className=''> travailler rapidement et efficacement dans un environnement très dynamique et exigeant</span>.
                                 J'ai appris à être à l'écoute des clients, à répondre à leurs besoins et à leurs
@@ -229,20 +178,7 @@ function Carrer() {
                                 Enfin, cette expérience m'a permis de découvrir un environnement professionnel très
                                 diversifié et multiculturel.
                             </p>
-                        ) : null}
-                        <button className={'bg-gray-200 hover:bg-gray-300 p-3 px-5 rounded-full text-center ml-90'}
-                                onClick={toggleTextMcdonaldVisibility}>
-                            {isTextMcdonaldVisible ? '-' : '+'}
-                        </button>
-                    </article>
-                    <article className={'entreprise rounded-xl mb-10 bg_pink'}>
-                        <div className={'flex items-center'}>
-                            <img src={siarce} alt='Siarce Logo' className='img_carer mr-3'/>
-                            <div className={'my-5'}>
-                                <h1 className={'text-lg italic'}>Chantiers Citoyens</h1>
-                                <h2>En 2017 et en 2018</h2>
-                            </div>
-                        </div>
+
                         <p className={'font-serif'}>
                             J'ai participé à plusieurs chantiers citoyens organisés par Siarce et la mairie de ma ville.
                             Ces chantiers avaient pour objectif d'aider
@@ -263,12 +199,7 @@ function Carrer() {
                                 En somme, ces chantiers citoyens ont été pour moi une expérience très enrichissante et
                                 gratifiante.
                             </p>
-                        ) : null}
-                        <button className={'bg-gray-200 hover:bg-gray-300 p-3 px-5 rounded-full text-center ml-90'}
-                                onClick={toggleTextSiarceVisibility}>
-                            {isTextSiarceVisible ? '-' : '+'}
-                        </button>
-                    </article>*/}
+                    */}
                 </section>
             </section>
             <Footer backgroundColor={"bg-pink-50"}></Footer>
@@ -276,4 +207,4 @@ function Carrer() {
     );
 }
 
-export default Carrer;
+export default Career;

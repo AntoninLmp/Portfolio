@@ -1,8 +1,7 @@
-import './css/Home.css';
-import '../index.css';
+import '../../index.css';
 
 import HeaderHomePage from './HeaderHomePage.jsx';
-import Header from "../components/Header.jsx";
+import Header from "../../components/Header.jsx";
 import {useEffect} from "react";
 
 

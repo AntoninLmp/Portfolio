@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import './css/Starter.css';
-import '../index.css';
+import '../../index.css';
 
 function StartName() {
     const [classNameDiv, setclassNameDiv] = useState('start-div');
@@ -24,8 +23,8 @@ function StartName() {
 
     return (
         <div className={classNameDiv}>
-            <h1 className='nameStart animation_text'>Antonin Lampin</h1>
-            <h2 className='descriptionStart animation_text'>Software Engineer</h2>
+            <h1 className='tracking-[0.5em] uppercase font-bold text-5xl mb-10 animation_text'>Antonin Lampin</h1>
+            <h2 className='tracking-[0.2em] italic font-extralight text-2xl animation_text'>Software Engineer</h2>
         </div >
     );
 }

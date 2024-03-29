@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const JobArticle = ({bgColor, titre, subtitle, imgSociety, flexNumber, imageText_1, text_1, imageText_2, text_2, imageText_3, text_3}) => {
     return (
-        <article className={`${bgColor} w-full bd_rad64px min-h-[400px] hover:scale-110 duration-700 flex_${flexNumber}`}>
+        <article className={`${bgColor} w-full rounded-[64px] min-h-[400px] hover:scale-110 duration-700 flex_${flexNumber}`}>
             <img
                 src={imgSociety}
                 alt={titre}
@@ -35,7 +35,7 @@ JobArticle.propTypes = {
     flexNumber: PropTypes.string.isRequired,
     titre: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
-    imgSociety: PropTypes.string.isRequired,
+    imgSociety: PropTypes.any.isRequired,
     imageText_1: PropTypes.string.isRequired,
     text_1: PropTypes.string.isRequired,
     imageText_2: PropTypes.string.isRequired,

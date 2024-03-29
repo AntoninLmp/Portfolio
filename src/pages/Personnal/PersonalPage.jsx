@@ -1,37 +1,34 @@
-import '../index.css';
-
-import Header from "../components/Header.jsx";
-import imgMe from "../assets/73CF120D-002F-4C37-95F7-39E7E0E42282.png"
-import imgScouts from "../assets/Scouts.jpg"
-import imgVoyage from "../assets/IMG_0585.jpg"
+import '../../index.css';
+import Header from "../../components/Header.jsx";
+import imgMe from "../../assets/73CF120D-002F-4C37-95F7-39E7E0E42282.png"
+import imgScouts from "../../assets/Scouts.jpg"
+import imgVoyage from "../../assets/IMG_0585.jpg"
 
 //Image Gallery
-import imgAnnecy1 from "../assets/Annecy.jpg";
-import imgAnnecy3 from "../assets/Annecy3.jpg";
-import imgScoutFlag from "../assets/Scout_savoie.jpg";
-import imgScoutFire from "../assets/Scouts2.jpg";
-import imgCassis from "../assets/CassisStreet.jpg";
-import imgWien from "../assets/Wien.jpg";
-import imgWien2 from "../assets/Wien2.jpg";
-import imgScout from "../assets/Scouts_compas.jpg";
-import imgNormandy from "../assets/Normandie.jpg";
-import imgCar1 from "../assets/car1.jpg";
-import imgPrague from "../assets/Prague1.jpg";
-import imgBulgaria from "../assets/Bulgarie1.jpg";
+import imgAnnecy1 from "../../assets/Annecy.jpg";
+import imgAnnecy3 from "../../assets/Annecy3.jpg";
+import imgScoutFlag from "../../assets/Scout_savoie.jpg";
+import imgScoutFire from "../../assets/Scouts2.jpg";
+import imgCassis from "../../assets/CassisStreet.jpg";
+import imgWien from "../../assets/Wien.jpg";
+import imgWien2 from "../../assets/Wien2.jpg";
+import imgScout from "../../assets/Scouts_compas.jpg";
+import imgNormandy from "../../assets/Normandie.jpg";
+import imgCar1 from "../../assets/car1.jpg";
+import imgPrague from "../../assets/Prague1.jpg";
+import imgBulgaria from "../../assets/Bulgarie1.jpg";
 
-import ImageWithCaption from "../components/ImageWithCaption.jsx";
-import Footer from "../components/Footer.jsx";
+import ImageWithCaption from "../../components/ImageWithCaption.jsx";
+import Footer from "../../components/Footer.jsx";
 import {useEffect, useState} from "react";
-import CustomArticle from "../components/CustomArticle.jsx";
-import data from '../../public/locales/fr.json';
+import CustomArticle from "../../components/CustomArticle.jsx";
+import data from '../../locales/fr.json';
 
 const PersonalPage = () => {
     const [isFirefox, setIsFirefox] = useState(false);
 
     useEffect(() => {
-        // Détecter si le navigateur est Firefox
         const isFirefoxBrowser = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-        // Mettre à jour l'état en conséquence
         setIsFirefox(isFirefoxBrowser);
     }, []);
 
@@ -85,7 +82,7 @@ const PersonalPage = () => {
                     </section>
                 </section>
 
-                <section className={"mt-32"} id={"section_moi"}>
+                <section className={"mt-32"}>
                     <section className={"flex mx-52"}>
                         <CustomArticle
                             bgColor="bg-pink-100"
