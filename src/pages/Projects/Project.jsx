@@ -39,8 +39,8 @@ const Project = () => {
                 <section className={"bg-green-100 my-20 mx-48 rounded-3xl flex flex-col"}>
                     <div className={"flex justify-evenly text-start"}>
                         <article className={"p-12 w-1/3"}>
-                            <h1 className={'text-white mb-5 text-3xl font-medium c_green'}>01.</h1>
-                            <h2 className={"c_green font-bold italic text-2xl"}>Diversité des technologies </h2>
+                            <h1 className={'text-white mb-5 text-5xl font-medium c_green'}>01.</h1>
+                            <h2 className={"c_green font-bold italic text-2xl h-16"}>Diversité des technologies </h2>
                             <p className={"text-gray-600 italic text-justify pt-5"}>
                                 La diversité des technologies constitue un pilier central de mon parcours
                                 d'ingénieur.j'ai eu l'opportunité de travailler avec un large éventail de langages et
@@ -49,8 +49,8 @@ const Project = () => {
                             </p>
                         </article>
                         <article className={"p-12 w-1/3"}>
-                            <h1 className={'text-white mb-5 text-3xl font-medium c_green'}>02.</h1>
-                            <h2 className={"c_green font-bold italic text-2xl"}>Travail en équipe</h2>
+                            <h1 className={'text-white mb-5 text-5xl font-medium c_green'}>02.</h1>
+                            <h2 className={"c_green font-bold italic text-2xl h-16"}>Travail en équipe</h2>
                             <p className={"text-gray-600 italic text-justify pt-5"}>
                                 Collaborer avec des équipes multidisciplinaires m'a permis de développer des compétences
                                 solides en communication, en résolution de problèmes et en leadership. Ensemble, nous
@@ -61,8 +61,8 @@ const Project = () => {
                     </div>
                     <div className={"flex justify-evenly text-start"}>
                         <article className={"p-12 w-1/3"}>
-                            <h1 className={'text-white mb-5 text-3xl font-medium c_green'}>03.</h1>
-                            <h2 className={"c_green font-bold italic text-2xl"}>Construction de projet</h2>
+                            <h1 className={'text-white mb-5 text-5xl font-medium c_green'}>03.</h1>
+                            <h2 className={"c_green font-bold italic text-2xl h-16"}>Construction de projet</h2>
                             <p className={"text-gray-600 italic text-justify pt-5"}>
                                 Le cycle de vie d'un projet est un processus dynamique, allant de la planification à la
                                 livraison, qui exige flexibilité et apprentissage continu. Maîtriser ce cycle permet de
@@ -70,13 +70,13 @@ const Project = () => {
                             </p>
                         </article>
                         <article className={"p-12 w-1/3"}>
-                            <h1 className={'text-white mb-5 text-3xl font-medium c_green'}>04.</h1>
-                            <h2 className={"c_green font-bold italic text-2xl"}>Enrichissement personnel </h2>
+                            <h1 className={'text-white mb-5 text-5xl font-medium c_green'}>04.</h1>
+                            <h2 className={"c_green font-bold italic text-2xl h-16"}>Enrichissement personnel </h2>
                             <p className={"text-gray-600 italic text-justify pt-5"}>
-                                Chaque projet est une occasion d'apprendre et de grandir, que ce soit en perfectionnant
+                                Chaque projet est une occasion d'apprendre et de grandir, en perfectionnant
                                 mes compétences techniques, en renforçant ma capacité à résoudre des problèmes complexes
                                 ou en développant ma créativité. Chaque défi relevé me rapproche de mes objectifs
-                                professionnels et me permet de m'épanouir en tant qu'ingénieur.
+                                professionnels et me permet de m'épanouir.
                             </p>
                         </article>
                     </div>

@@ -1,7 +1,6 @@
 import '../../index.css';
 import Header from "../../components/Header.jsx";
 import imgMe from "../../assets/73CF120D-002F-4C37-95F7-39E7E0E42282.png"
-import imgScouts from "../../assets/Scouts.jpg"
 import imgVoyage from "../../assets/IMG_0585.jpg"
 
 //Image Gallery
@@ -89,14 +88,14 @@ const PersonalPage = () => {
                             flexNumber="1"
                             titre="🚴🏽 Vélo en forêt, Vtt"
                             subtitle="Sport"
-                            imgSrc="https://media.ucpa.com/image/upload/f_auto/t_UCPA/UCPA-SPORT-NATURE/France/00043747.jpg"
+                            imgSrc="https://res.cloudinary.com/easymountain/image/upload/dpr_2.625,q_auto/c_fill,g_auto,h_507,w_507/v1/decathlon-outdoor/prod/hikes/6114ffaee2de3/6114ffaee2de3-1628780168"
                          />
                         <CustomArticle
                             bgColor="bg-amber-100"
                             flexNumber="2"
                             titre="⚜️ Scouts et Guides de France"
                             subtitle="Association"
-                            imgSrc={imgScouts}
+                            imgSrc={"https://wp.fr.aleteia.org/wp-content/uploads/sites/6/2020/02/tente-scoute.jpg"}
                         />
                     </section>
                     <section className={"flex mx-52"}>
