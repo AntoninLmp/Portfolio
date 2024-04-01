@@ -2,6 +2,7 @@ import '../../index.css';
 import Typewriter from 'typewriter-effect';
 import imageDesktop from '../../assets/bg_desk2.jpg';
 import imgWave from '../../assets/waveHome.svg';
+import {Link} from "react-router-dom";
 
 function HeaderHomePage() {
     return (
@@ -22,9 +23,9 @@ function HeaderHomePage() {
                     </p>
                 </div>
             </section>
-            <a href={"/AntoninLampin"} className={"mt-5 italic text-2xl"}>
+            <Link to={"/AntoninLampin"} className={"mt-5 italic text-2xl"}>
                 <button className={"bg_green text-xl mt-5 italic p-4 rounded-xl m-auto"}>Let&apos;s go </button>
-            </a>
+            </Link>
 
             <div className="svg-container">
                 <img src={imgWave} alt={"Waves background"} className={"relative bottom-10"}/>
