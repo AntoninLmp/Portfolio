@@ -17,14 +17,14 @@ function Career() {
             <section className={"text-center bg-pink-50"}>
                 {/* Name of this section */}
                 <div className={"mx_30 bg-amber-50 rounded-full py-3"}>
-                    <h1 className={"text-7xl font-Display c_yellow my-20"}>Mes éxperiences professionnelles.</h1>
+                    <h1 className={"text-7xl font-Display c_yellow my-20"}>Mes experiences professionnelles.</h1>
                     <img src={"https://www.svgrepo.com/show/233976/suitcase-portfolio.svg"} alt={""}
                          className={"w-20 absolute top-[340px]"}/>
                 </div>
                 <section className='mx-40 font-roboto mt-24 grid grid-cols-2 gap-20'>
                     <JobArticle
                         bgColor={"bg-amber-100"}
-                        titre={"Alternant développeur informatique"}
+                        titre={"Alternant ingénieur en informatique"}
                         subtitle={"De 2022 à aujourd'hui"}
                         imgSociety={thales}
                         imageText_1={"https://www.svgrepo.com/show/502440/computer.svg"}
