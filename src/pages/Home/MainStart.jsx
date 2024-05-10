@@ -8,12 +8,12 @@ import '../../index.css';
 
 const MainPage = () => {
 
-    const [Home, setHome] = useState('d_content');
-    const [Main, setMain] = useState(' d_none');
+    const [Home, setHome] = useState('h-screen');
+    const [Main, setMain] = useState('d_none');
 
     setTimeout(() => {
         setHome('d_none');
-        setMain('d_content overflow-hidden');
+        setMain('h-screen overflow-hidden');
     }, 6100);
     useEffect(() => {
         // Applying on mount
