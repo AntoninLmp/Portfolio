@@ -36,27 +36,27 @@ const PersonalPage = () => {
             <Header backgroundColor="bg-green-50"/>
             <section className={"text-center bg-green-50"}>
                 <div className={"mx_30 bg-amber-50 rounded-full py-3"}>
-                    <h1 className={"text-8xl font-Display c_yellow my-20"}>{data.personal.page_title}</h1>
-                    <img src={"https://www.svgrepo.com/show/422032/scout-hat.svg"} alt={""} className={"w-16 absolute top-20 ml_35"}/>
+                    <h1 className={"text-6xl lg:text-8xl font-Display c_yellow my-20"}>{data.personal.page_title}</h1>
+                    <img src={"https://www.svgrepo.com/show/422032/scout-hat.svg"} alt={""} className={"w-16 absolute top-32 ml_35"}/>
                 </div>
-                <section className={"flex flex-col justify-center mt-28"}>
-                    <section className={"flex justify-center"}>
-                        <div className={"bg-green-200 w-max pt-8 rounded-t-full font-Display"}>
-                            <img src={imgMe} alt={"Picture of the creator"} className={"w-56 m-auto "}/>
+                <section className={"flex flex-col justify-center mt-28 px-5"}>
+                    <section className={"flex justify-center items-center"}>
+                        <div className={"bg-green-200 w-max pt-8 rounded-t-full font-Display flex max-h-52 md:max-h-max "}>
+                            <img src={imgMe} alt={"Picture of the creator"} className={"w-56 min-w-40 "}/>
                         </div>
                         <div className={"text-justify mx-16 max-w-lg flex flex-col justify-end"}>
-                            <h1 className={"text-3xl c_green my-8"}>
+                            <h1 className={"md:text-2xl lg:text-3xl c_green my-8"}>
                                 {data.personal.header.title}
                             </h1>
-                            <p className={"italic font-light  text-lg"}>
+                            <p className={"italic font-light md:text-base lg:text-lg"}>
                                 {data.personal.header.subtitle}
                             </p>
                         </div>
                         <img
                             src={"https://static.vecteezy.com/system/resources/previews/011/298/960/non_2x/simplicity-monstera-plant-freehand-drawing-flat-design-free-png.png"}
-                            alt={"plants"} className={"w-60 right-0"}/>
+                            alt={"plants"} className={"hidden lg:inline w-60 right-0"}/>
                     </section>
-                    <section className={"flex justify-center pt-6"}>
+                    <section className={"flex justify-center pt-6 px-6"}>
                         <p className={"font-light text-justify text-base max-w-5xl"}>
                             {data.personal.header.about.paragraph_1.part1}
                             <span className={"c_green italic"}>{data.personal.header.about.paragraph_1.part2}</span>
@@ -82,33 +82,29 @@ const PersonalPage = () => {
                 </section>
 
                 <section className={"mt-32"}>
-                    <section className={"flex mx-52"}>
+                    <section className={"flex lg:mx-52"}>
                         <CustomArticle
                             bgColor="bg-pink-100"
-                            flexNumber="1"
                             titre="🚴🏽 Vélo en forêt, Vtt"
                             subtitle="Sport"
                             imgSrc="https://res.cloudinary.com/easymountain/image/upload/dpr_2.625,q_auto/c_fill,g_auto,h_507,w_507/v1/decathlon-outdoor/prod/hikes/6114ffaee2de3/6114ffaee2de3-1628780168"
                          />
                         <CustomArticle
                             bgColor="bg-amber-100"
-                            flexNumber="2"
-                            titre="⚜️ Scouts et Guides de France"
+                            titre="⚜️ Scouts/Guides de France"
                             subtitle="Association"
                             imgSrc={"https://wp.fr.aleteia.org/wp-content/uploads/sites/6/2020/02/tente-scoute.jpg"}
                         />
                     </section>
-                    <section className={"flex mx-52"}>
+                    <section className={"flex lg:mx-52"}>
                         <CustomArticle
                             bgColor="bg-blue-100"
-                            flexNumber="2"
                             titre="🛩️ Voyage"
                             subtitle="Hobbie"
                             imgSrc={imgVoyage}
                         />
                         <CustomArticle
                             bgColor="bg-green-200"
-                            flexNumber="1"
                             titre="🎧Musique"
                             subtitle="Une passion"
                             imgSrc={"https://media.timeout.com/images/105976410/750/562/image.jpg"}
@@ -118,7 +114,7 @@ const PersonalPage = () => {
 
             </section>
             <section className={"text-center bg-green-50"}>
-                <section className={"mx_25 py-10"}>
+                <section className={"lg:mx-60 mx-20 py-10"}>
                     <p className={"font-light text-justify text-base"}>
                         {data.personal.description.paragraph.part1}
                         <span className='c_green'>{data.personal.description.paragraph.part2}</span>
