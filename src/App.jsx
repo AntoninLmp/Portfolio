@@ -9,7 +9,7 @@ import Project from './pages/Projects/Project.jsx';
 
 function App() {
     return (
-        <BrowserRouter basename={"/Portfolio"}>
+        <BrowserRouter basename={"/"}>
             <Routes>
                 <Route>
                     <Route index element={<MainStart/>} />
