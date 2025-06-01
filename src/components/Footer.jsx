@@ -4,7 +4,6 @@ import "../index.css"
 function Footer ({ backgroundColor = "#ffffff" }) {
     return (
         <footer className={`text-center ${backgroundColor}`}>
-                {/*<p className={"m-8 font-light text-5xl"}>Travaillons <span className='c_green'>ensemble</span> !</p>*/}
                 <div className={'flex align-middle justify-evenly mx-72 py-10 '}>
                     <a href='https://www.linkedin.com/in/antonin-lampin-346a2a1a4/'>
                         <img src='https://cdn-icons-png.flaticon.com/256/38/38669.png' alt='Linkedin Logo' className={'w-20 h-20'} />

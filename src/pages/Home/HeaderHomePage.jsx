@@ -14,13 +14,13 @@ function HeaderHomePage() {
                 <p className={'text-2xl md:text-3xl lg:text-5xl text_shadow'}>Bienvenue sur mon portfolio</p>
                 <div className={'flex justify-center mt-4 italic font-light text-base'}>
                     <p className={' mr-1'}>Vous découvrirez que je suis</p>
-                    <p className={'flex'}>
+                    <div className={'flex'}>
                         <Typewriter options={{
                             strings: ['étudiant en alternance.', 'développeur logiciel junior.', 'chef Scouts.', 'un voyageur.', 'passionné de nature.'],
                             autoStart: true,
                             loop: true,
                         }}/>
-                    </p>
+                    </div>
                 </div>
             </section>
             <Link to={"/AntoninLampin"} className={"mt-5 italic text-2xl"}>
