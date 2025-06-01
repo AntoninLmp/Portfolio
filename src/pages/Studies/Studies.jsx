@@ -10,8 +10,8 @@ const Studies = () => {
             <Header backgroundColor={"bg-amber-50"}/>
             <section className={"text-center bg-amber-50"}>
                 <div className={"mx_30 bg-green-50 rounded-full py-3"}>
-                    <h1 className={"text-8xl font-Display c_green my-20"}>Mes études.</h1>
-                    <img src={"https://www.svgrepo.com/show/285187/stars-star.svg"} alt={""} className={"w-20 absolute top-20"}/>
+                    <h1 className={"text-6xl lg:text-8xl font-Display c_green my-20"}>Mes études.</h1>
+                    <img src={"https://www.svgrepo.com/show/285187/stars-star.svg"} alt={""} className={"w-20 absolute md:top-20 top-32"}/>
                 </div>
                 <section>
                     <SchoolWithCaption
@@ -23,7 +23,7 @@ const Studies = () => {
                             "grace à la spécialité ISN (informatique) que j'ai découvert le domaine qui me plaisait. J'ai eu un BAC Scientifique avec Mention."}
                         side={"left"}
                     />
-                    <img src={"https://www.svgrepo.com/show/418916/doodle-education-line-2.svg"} alt={""} className={"w-24 absolute ml-[15%]"}/>
+                    <img src={"https://www.svgrepo.com/show/418916/doodle-education-line-2.svg"} alt={""} className={"w-24 absolute lg:ml-[15%] sm:ml-[8%] hidden sm:block"}/>
                     <SchoolWithCaption
                         imgSrc={"https://upload.wikimedia.org/wikipedia/commons/2/2b/Universite-Paris-Rive-Gauche.JPG"}
                         altText={"Université Paris Diderot, Paris 13ème"}
@@ -33,7 +33,7 @@ const Studies = () => {
                             " qui me plaisaient le plus. Après quelques mois, j'ai réaliser que la biologie n'était pas faite pour moi alors je me suis concentré sur " +
                             "l'informatique. Je n'y suis pas rester longtemps puisque j'ai rejoins l'efrei dans la même année en rentré décalé. "}
                     />
-                    <img src={"https://www.svgrepo.com/show/418922/doodle-education-line.svg"} alt={""} className={"w-24 absolute ml-[85%]"}/>
+                    <img src={"https://www.svgrepo.com/show/418922/doodle-education-line.svg"} alt={""} className={"w-24 absolute ml-[85%] hidden sm:block"}/>
                     <SchoolWithCaption
                         imgSrc={"https://www.efrei.fr/wp-content/uploads/2021/09/ecole-ingenieur-generaliste-paris-efrei-scaled.jpg"}
                         altText={"Efrei Paris, Villejuif"}
@@ -45,7 +45,7 @@ const Studies = () => {
                             "l'ingénierie liés aux nouvelles technologies. "}
                         side={"left"}
                     />
-                    <img src={"https://www.svgrepo.com/show/418918/doodle-finish-graduation.svg"} alt={""} className={"w-24 absolute ml-[15%]"}/>
+                    <img src={"https://www.svgrepo.com/show/418918/doodle-finish-graduation.svg"} alt={""} className={"w-24 absolute lg:ml-[15%] sm:ml-[8%] hidden sm:block"}/>
                     <SchoolWithCaption
                         imgSrc={"https://yt3.googleusercontent.com/ytc/APkrFKZFdRraXm1FF3yRvvfoz12kWbQtZJUXFLy3odZL=s900-c-k-c0x00ffffff-no-rj"}
                         altText={"ESSCA, Budapest"}

@@ -15,12 +15,12 @@ const MainPage = () => {
         }
     }, [])
     return (
-        <>
+        <div className="h-screen">
             <Header />
-            <header className={'flex h-full '}>
+            <div className={'flex h-full '}>
                 <HeaderHomePage />
-            </header>
-        </>
+            </div>
+        </div>
     );
 };
 

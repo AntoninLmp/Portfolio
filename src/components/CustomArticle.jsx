@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 
-const CustomArticle = ({bgColor, titre, subtitle, imgSrc, flexNumber}) => {
+const CustomArticle = ({bgColor, titre, subtitle, imgSrc}) => {
     return (
-        <article className={`${bgColor} text-right w-full m-10 rounded-[64px] flex_${flexNumber} ease-in-out duration-500 hover:scale-110`}>
+        <article className={`${bgColor} text-right w-full m-10 rounded-[64px] ease-in-out duration-500 hover:scale-110`}>
             <div className={"m-8 font-Display"}>
-                <h1 className={"font-normal text-2xl"}>{titre}</h1>
+                <h1 className={"font-normal md:text-2xl"}>{titre}</h1>
                 <h2>{subtitle}</h2>
             </div>
             <img
                 src={imgSrc}
                 alt={titre}
-                className={"ml-[15%] w-[85%] rounded-br-[64px] rounded-tl-[64px] h-[350px] object-cover"}
+                className={"ml-[20%] w-[80%] h-[250px] md:ml-[15%] md:w-[85%] md:h-[350px]  rounded-br-[64px] rounded-tl-[64px] object-cover"}
             />
         </article>
     );
@@ -18,7 +18,6 @@ const CustomArticle = ({bgColor, titre, subtitle, imgSrc, flexNumber}) => {
 
 CustomArticle.propTypes = {
     bgColor: PropTypes.string.isRequired,
-    flexNumber: PropTypes.string.isRequired,
     titre: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     imgSrc: PropTypes.any.isRequired
