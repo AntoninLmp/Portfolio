@@ -32,7 +32,7 @@ const Project = () => {
             <Header backgroundColor={"bg-green-50"}/>
             <div className="bg-green-50 text-center">
                 <div className={"mx_30 bg-amber-50 rounded-full py-3"}>
-                    <h1 className={"text-8xl font-Display c_yellow my-20"}>Mes projets.</h1>
+                    <h1 className={"text-8xl font-display c_yellow my-20"}>Mes projets.</h1>
                     <img src={"https://www.svgrepo.com/show/411643/code.svg"} alt={"icons"}
                          className={"w-16 absolute top-80 ml_35"}/>
                 </div>
