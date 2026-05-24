@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const CustomArticle = ({bgColor, titre, subtitle, imgSrc}) => {
     return (
         <article className={`${bgColor} text-right w-full m-10 rounded-[64px] ease-in-out duration-500 hover:scale-110`}>
-            <div className={"m-8 font-Display"}>
+            <div className={"m-8 font-display"}>
                 <h1 className={"font-normal md:text-2xl"}>{titre}</h1>
                 <h2>{subtitle}</h2>
             </div>

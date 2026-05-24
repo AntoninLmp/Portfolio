@@ -10,7 +10,7 @@ const Studies = () => {
             <Header backgroundColor={"bg-amber-50"}/>
             <section className={"text-center bg-amber-50"}>
                 <div className={"mx_30 bg-green-50 rounded-full py-3"}>
-                    <h1 className={"text-6xl lg:text-8xl font-Display c_green my-20"}>Mes études.</h1>
+                    <h1 className={"text-6xl lg:text-8xl font-display c_green my-20"}>Mes études.</h1>
                     <img src={"https://www.svgrepo.com/show/285187/stars-star.svg"} alt={""} className={"w-20 absolute md:top-20 top-32"}/>
                 </div>
                 <section>

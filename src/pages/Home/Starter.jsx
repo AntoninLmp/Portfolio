@@ -25,8 +25,8 @@ function StartName() {
 
     return (
         <div className={classNameDiv}>
-            <h1 className='tracking-[0.5em] uppercase font-bold sm:text-2xl md:text-5xl mb-10 animation_text'>Antonin Lampin</h1>
-            <h2 className='tracking-[0.2em] italic font-extralight sm:text-xl md:text-2xl animation_text'>Software Engineer</h2>
+            <h1 className='tracking-[0.5em] uppercase font-bold sm:text-2xl md:text-5xl mb-10 animation_text text-primary-green'>Antonin Lampin</h1>
+            <h2 className='tracking-[0.2em] font-extralight sm:text-xl md:text-2xl animation_text'>Full stack Engineer</h2>
         </div >
     );
 }

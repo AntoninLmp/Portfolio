@@ -8,7 +8,7 @@ const JobArticle = ({bgColor, titre, subtitle, imgSociety, flexNumber, imageText
                 alt={titre}
                 className={"m-auto my-5 w-52 object-cover"}
             />
-            <div className={"m-8 font-Display"}>
+            <div className={"m-8 font-display"}>
                 <h1 className={"font-normal text-2xl"}>{titre}</h1>
                 <h2>{subtitle}</h2>
             </div>

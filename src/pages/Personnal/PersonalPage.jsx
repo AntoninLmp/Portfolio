@@ -36,12 +36,12 @@ const PersonalPage = () => {
             <Header backgroundColor="bg-green-50"/>
             <section className={"text-center bg-green-50"}>
                 <div className={"mx_30 bg-amber-50 rounded-full py-3"}>
-                    <h1 className={"text-6xl lg:text-8xl font-Display c_yellow my-20"}>{data.personal.page_title}</h1>
+                    <h1 className={"text-6xl lg:text-8xl font-display c_yellow my-20"}>{data.personal.page_title}</h1>
                     <img src={"https://www.svgrepo.com/show/422032/scout-hat.svg"} alt={""} className={"w-20 absolute md:top-32 top-40 ml_35"}/>
                 </div>
                 <section className={"flex flex-col justify-center mt-28 px-5"}>
                     <section className={"flex justify-center items-center"}>
-                        <div className={"bg-green-200 w-max pt-8 rounded-t-full font-Display flex max-h-52 md:max-h-max "}>
+                        <div className={"bg-green-200 w-max pt-8 rounded-t-full font-display flex max-h-52 md:max-h-max "}>
                             <img src={imgMe} alt={"Picture of the creator"} className={"w-56 min-w-40 "}/>
                         </div>
                         <div className={"text-justify mx-16 max-w-lg flex flex-col justify-end"}>
