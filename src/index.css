@@ -58,9 +58,6 @@ body{
 }
 
 /* =================== COLOR =================== */
-.c_green {
-  color: #18C3A1;
-}
 .c_pink {
   color: #EF767A;
 }
@@ -88,6 +85,10 @@ body{
 
 .bg-primary-green {
   background-color: #1B5E3F;
+}
+
+.bg-light-green {
+  background-color: #49786a;
 }
 
 .bg-sage-green {

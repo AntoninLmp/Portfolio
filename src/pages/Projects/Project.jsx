@@ -39,8 +39,8 @@ const Project = () => {
                 <section className={"bg-green-100 my-20 mx-48 rounded-3xl flex flex-col"}>
                     <div className={"flex justify-evenly text-start"}>
                         <article className={"p-12 w-1/3"}>
-                            <h1 className={'text-white mb-5 text-5xl font-medium c_green'}>01.</h1>
-                            <h2 className={"c_green font-bold italic text-2xl h-16"}>Diversité des technologies </h2>
+                            <h1 className={'text-white mb-5 text-5xl font-medium text-primary-green'}>01.</h1>
+                            <h2 className={"text-primary-green font-bold italic text-2xl h-16"}>Diversité des technologies </h2>
                             <p className={"text-gray-600 italic text-justify pt-5"}>
                                 La diversité des technologies constitue un pilier central de mon parcours
                                 d'ingénieur.j'ai eu l'opportunité de travailler avec un large éventail de langages et
@@ -49,8 +49,8 @@ const Project = () => {
                             </p>
                         </article>
                         <article className={"p-12 w-1/3"}>
-                            <h1 className={'text-white mb-5 text-5xl font-medium c_green'}>02.</h1>
-                            <h2 className={"c_green font-bold italic text-2xl h-16"}>Travail en équipe</h2>
+                            <h1 className={'text-white mb-5 text-5xl font-medium text-primary-green'}>02.</h1>
+                            <h2 className={"text-primary-green font-bold italic text-2xl h-16"}>Travail en équipe</h2>
                             <p className={"text-gray-600 italic text-justify pt-5"}>
                                 Collaborer avec des équipes multidisciplinaires m'a permis de développer des compétences
                                 solides en communication, en résolution de problèmes et en leadership. Ensemble, nous
@@ -61,8 +61,8 @@ const Project = () => {
                     </div>
                     <div className={"flex justify-evenly text-start"}>
                         <article className={"p-12 w-1/3"}>
-                            <h1 className={'text-white mb-5 text-5xl font-medium c_green'}>03.</h1>
-                            <h2 className={"c_green font-bold italic text-2xl h-16"}>Construction de projet</h2>
+                            <h1 className={'text-white mb-5 text-5xl font-medium text-primary-green'}>03.</h1>
+                            <h2 className={"text-primary-green font-bold italic text-2xl h-16"}>Construction de projet</h2>
                             <p className={"text-gray-600 italic text-justify pt-5"}>
                                 Le cycle de vie d'un projet est un processus dynamique, allant de la planification à la
                                 livraison, qui exige flexibilité et apprentissage continu. Maîtriser ce cycle permet de
@@ -70,8 +70,8 @@ const Project = () => {
                             </p>
                         </article>
                         <article className={"p-12 w-1/3"}>
-                            <h1 className={'text-white mb-5 text-5xl font-medium c_green'}>04.</h1>
-                            <h2 className={"c_green font-bold italic text-2xl h-16"}>Enrichissement personnel </h2>
+                            <h1 className={'text-white mb-5 text-5xl font-medium text-primary-green'}>04.</h1>
+                            <h2 className={"text-primary-green font-bold italic text-2xl h-16"}>Enrichissement personnel </h2>
                             <p className={"text-gray-600 italic text-justify pt-5"}>
                                 Chaque projet est une occasion d'apprendre et de grandir, en perfectionnant
                                 mes compétences techniques, en renforçant ma capacité à résoudre des problèmes complexes
@@ -186,7 +186,7 @@ const Project = () => {
                                                 lisibilité du code.
                                                 <br/><br/>
                                                 ° J'ai pu travailler en équipe sur des projets <span
-                                                className={'c_green italic font-normal'}>Spring Boot</span>. J'ai pu
+                                                className={'text-primary-green italic font-normal'}>Spring Boot</span>. J'ai pu
                                                 mettre en place des tests unitaires et d'intégration avec Junit et
                                                 Mockito.
                                             </p>}
@@ -199,7 +199,7 @@ const Project = () => {
                                             imageSource={img_ordonnancement}
                                             content={<p className={'mx-8 mr-20 text-justify font-light'}>
                                                 ° L'algorithme de Huffman est un <span
-                                                className={'c_green italic font-normal'}>algorithme de compression de données</span> qui
+                                                className={'text-primary-green italic font-normal'}>algorithme de compression de données</span> qui
                                                 permet de compresser des fichiers. Tout d'abord, il analyse la fréquence
                                                 d'apparition de chaque symbole dans le fichier à compresser, puis il
                                                 construit un arbre binaire appelé "arbre de Huffman" en utilisant ces
@@ -287,7 +287,7 @@ const Project = () => {
                                             projectName={"Front library for building user interfaces"}
                                             imageSource={"https://www.officialgates.com/assets/images/banner-images/react-native-app.png"}
                                             content={<p className={'mx-8 mr-20 text-justify font-light'}>
-                                                Mon parcours avec <span className={'c_green italic font-normal'}>React a débuté avec le projet de construire
+                                                Mon parcours avec <span className={'text-primary-green italic font-normal'}>React a débuté avec le projet de construire
                                                     ce portfolio</span>. En entreprenant cette initiative, j'ai
                                                 commencer
                                                 l'apprentissage continu de React pour créer une interface
