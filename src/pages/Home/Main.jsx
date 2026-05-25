@@ -17,7 +17,7 @@ const MainPage = () => {
     return (
         <div className="h-screen">
             <Header />
-            <div className={'flex h-full '}>
+            <div className={'flex h-[85vh]'}>
                 <HeaderHomePage />
             </div>
         </div>

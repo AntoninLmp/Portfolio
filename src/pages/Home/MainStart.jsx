@@ -30,7 +30,7 @@ const MainPage = () => {
             </div>
             <div className={Main}>
                 <Header />
-                <header className={'flex h-full'}>
+                <header className={'flex h-[85vh]'}>
                     <HeaderHomePage />
                 </header>
             </div>
