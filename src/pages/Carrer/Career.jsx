@@ -63,7 +63,7 @@ function Career() {
                     <div className={"relative"}>
                         <div className={"absolute left-5 top-0 hidden h-full w-px bg-emerald-200 md:block"} />
                         <div className={"space-y-6 md:space-y-8"}>
-                            <JobArticle
+                            <Job Article
                                 title={"Développeur web - front-end (Safran Colombelles)"}
                                 subtitle={"De 2024 à aujourd'hui"}
                                 summary={"Conception et développement de nouvelles fonctionnalités pour deux interfaces web distinctes dédiées au tracking et à la visualisation de satellites(Wewatch). Evolution visuel et optimisation de performance côté client. Gestion des releases, correction de bugs et mise à jour continue du système pour garantir la fiabilité de l'application."}
