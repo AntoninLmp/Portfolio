@@ -32,7 +32,7 @@ const hobbies = [
     },
     {
         bgColor: "",
-        titre: "Pratiquer le VTT en forets pour me vider la tête",
+        titre: "Pratiquer le VTT en forêt pour me vider la tête",
         subtitle: "Sport",
         imgSrc: "https://www.velorizons.com/mf_websites/main/uploads/fr/circuit/circuit_331/vosges-vtt-1_1639567137.jpg"
     },

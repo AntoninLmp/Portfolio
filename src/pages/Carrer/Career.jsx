@@ -5,6 +5,7 @@ import JobArticle from "../../components/JobArticle.jsx";
 // Importing images
 import restalliance from '../../assets/restalliance-rmbg.png';
 import thales from '../../assets/thales.png';
+import alten from '../../assets/Logo_alten.png';
 import Mcdonald from '../../assets/McDonalds_2-rmbg.png';
 import siarce from '../../assets/siarce-rmbg.png';
 import weldom from '../../assets/weldom_rmbg.png';
@@ -13,196 +14,139 @@ function Career() {
 
     return (
         <>
-            <Header backgroundColor={"bg-pink-50"}> </Header>
-            <section className={"text-center bg-pink-50"}>
+            <Header backgroundColor={"bg-green-50"}> </Header>
+            <section className={"text-center bg-green-50"}>
                 {/* Name of this section */}
-                <div className={"mx_30 bg-amber-50 rounded-full py-3"}>
-                    <h1 className={"text-7xl font-display c_yellow my-20"}>Mes experiences professionnelles.</h1>
-                    <img src={"https://www.svgrepo.com/show/233976/suitcase-portfolio.svg"} alt={""}
-                         className={"w-20 absolute top-[340px]"}/>
+                <div className ={"mx-auto max-w-6xl px-6 pb-8 pt-10 lg:px-8 lg:pb-10"}>
+                    <div id="career_title" className={"rounded-[32px] bg-white/80 px-6 py-10 shadow-[0_24px_70px_-35px_rgba(15,23,42,0.2)] backdrop-blur sm:px-8 lg:px-12"}>
+                        <div className={"flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between"}>
+                            <div className={"max-w-2xl text-left"}>
+                                <span className={"inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary-green"}>
+                                    Parcours professionnel
+                                </span>
+                                <h1 className={"mt-4 font-display text-4xl text-primary-green md:text-5xl lg:text-6xl"}>
+                                    Mes experiences professionnelles.
+                                </h1>
+                                <p className={"mt-4 text-sm leading-7 text-slate-700 md:text-base"}>
+                                    J'ai eu l'opportunité de travailler dans différents secteurs, ce qui m'a permis d'acquérir une expérience professionnelle diversifiée et enrichissante. Voici un aperçu de mes expériences professionnelles les plus significatives.
+                                </p>
+                            </div>
+                            <div className={" sm:grid-cols-3 lg:w-[380px]"}>
+                                <div className={"rounded-2xl mb-4 bg-emerald-50 px-4 py-3 text-left"}>
+                                    <p className={"text-2xl font-semibold text-primary-green"}>2</p>
+                                    <p className={"text-sm text-slate-600"}>années d'alternance</p>
+                                </div>
+                                <div className={"rounded-2xl mb-4 bg-amber-50 px-4 py-3 text-left"}>
+                                    <p className={"text-2xl font-semibold text-primary-green"}>4</p>
+                                    <p className={"text-sm text-slate-600"}>années d'expérience</p>
+                                </div>
+                                <div className={"rounded-2xl mb-4 bg-slate-100 px-4 py-3 text-left"}>
+                                    <p className={"text-2xl font-semibold text-primary-green"}>2</p>
+                                    <p className={"text-sm text-slate-600"}>emplois étudiants</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <section className='mx-40 font-display mt-24 grid grid-cols-2 gap-20'>
-                    <JobArticle
-                        bgColor={"bg-amber-100"}
-                        titre={"Alternant ingénieur en informatique"}
-                        subtitle={"De 2022 à aujourd'hui"}
-                        imgSociety={thales}
-                        imageText_1={"https://www.svgrepo.com/show/502440/computer.svg"}
-                        text_1={"Intégration continue"}
-                        imageText_2={"https://www.svgrepo.com/show/121436/radar.svg"}
-                        text_2={"Environnement de développement radar"}
-                        imageText_3={"https://www.svgrepo.com/show/233976/suitcase-portfolio.svg"}
-                        text_3={"Intégration continue des radars militaires"}
-                        flexNumber={"1"} />
-                    <JobArticle
-                        bgColor={"bg-green-100"}
-                        titre={"Conseiller de vente - CDI"}
-                        subtitle={"De 2020 à 2021, les week-ends"}
-                        imgSociety={weldom}
-                        imageText_1={"https://www.svgrepo.com/show/485388/hammer.svg"}
-                        text_1={"Solutions de Bricolage"}
-                        imageText_2={"https://cdn-icons-png.flaticon.com/512/2534/2534183.png"}
-                        text_2={"Service client"}
-                        imageText_3={"https://cdn-icons-png.flaticon.com/512/4689/4689923.png"}
-                        text_3={"Gestion des caisses"}
-                        flexNumber={"1"}/>
-                    <JobArticle
-                        bgColor={"bg-pink-200"}
-                        titre={"Employé de restauration"}
-                        subtitle={"Durant l'été 2022"}
-                        imgSociety={restalliance}
-                        imageText_1={"https://www.svgrepo.com/show/429377/bibimbub-cooking-food.svg "}
-                        text_1={"Préparation des plats"}
-                        imageText_2={"https://www.svgrepo.com/show/244463/dish.svg"}
-                        text_2={"Qualité du service"}
-                        imageText_3={"https://www.svgrepo.com/show/317748/team.svg"}
-                        text_3={"Travail en équipe"}
-                        flexNumber={"1"} />
-                    <JobArticle
-                        bgColor={"bg-amber-100"}
-                        titre={"Equipier polyvalent"}
-                        subtitle={"De Avril à Septembre - 2019"}
-                        imgSociety={Mcdonald}
-                        imageText_1={"https://www.svgrepo.com/show/521655/fast-forward.svg"}
-                        text_1={"Service Rapide"}
-                        imageText_2={"https://www.svgrepo.com/show/493315/fast-food-male-clerk-upper-body.svg"}
-                        text_2={"Polyvalence"}
-                        imageText_3={"https://www.svgrepo.com/show/317748/team.svg"}
-                        text_3={"Travail en Équipe"}
-                        flexNumber={"1"} />
-                    <JobArticle
-                        bgColor={"bg-green-100"}
-                        titre={"Chantiers Citoyens"}
-                        subtitle={"En 2017 et en 2018"}
-                        imgSociety={siarce}
-                        imageText_1={"https://cdn-icons-png.flaticon.com/512/3208/3208264.png"}
-                        text_1={"Solidarité"}
-                        imageText_2={"https://www.svgrepo.com/show/216839/newspaper-news.svg"}
-                        text_2={"Contribution à la Communauté Locale"}
-                        imageText_3={"https://www.svgrepo.com/show/478789/information.svg"}
-                        text_3={"Expérience Enrichissante"}
-                        flexNumber={"1"} />
 
-                   {/*
-                        <p className={'font-serif'}>
-                            Je suis actuellement en <span
-                            className=''>alternance chez Thales Land Air System à Limours</span>, où je travaille sur la
-                            partie intégration
-                            continue des radars militaires développés par l'entreprise. Notre site est spécialisé
-                            dans <span className=''>la conception et la fabrication de systèmes électroniques
-                        de défense pour les forces armées françaises</span>. <br/>
+                <section className={"mx-auto mt-16 max-w-6xl px-6 pb-16 lg:px-8"}>
+                    <div className={"mb-8 text-left"}>
+                        <p className={"text-sm font-semibold uppercase tracking-[0.3em] text-primary-green"}>Timeline professionnelle</p>
+                        <h2 className={"mt-3 font-display text-3xl text-primary-green md:text-4xl"}>
+                            Mon parcours professionnel
+                        </h2>
+                        <p className={"mt-3 max-w-2xl text-sm leading-7 text-slate-700 md:text-base"}>
+                            Voici un aperçu de mes expériences professionnelles les plus significatives, qui illustrent mon parcours diversifié et enrichissant dans différents secteurs d'activité.
                         </p>
-                        {isTextThalesVisible ? (
-                            <p className={'font-serif'}>
-                                Mon travail consiste à <span
-                                className=''>améliorer la partie intégration continue</span> des radars, en utilisant
-                                les dernières technologies et méthodologies
-                                en la matière. J'ai pour mission de garantir la qualité du processus de développement,
-                                en automatisant les tests et en assurant la traçabilité des
-                                modifications apportées au code source. <br/>
-                                Pour ce faire, je travaille en étroite collaboration avec les équipes de développement,
-                                de test et de validation des radars.
-                                Mon poste chez Thales LAS à Limours est très stimulant. <br/>
-                                En somme, je suis fier de travailler chez Thales LAS à Limours, où je peux contribuer au
-                                développement de technologies de pointe pour la défense de
-                                notre pays et de nos alliés. Mon travail sur la partie intégration continue des radars
-                                militaires est un défi passionnant.
-                            </p>
-                        ) : null}
+                    </div>
 
-                            <span className=''>Pendant mes études</span>, j'ai travaillé en tant que vendeur et
-                            caissier.
-                            J'ai eu l'opportunité de <span className=''>conseiller les clients</span> sur les différents
-                            produits disponibles en magasin. J'ai appris à
-                            orienter les clients vers les outils, les matériaux et les accessoires les plus adaptés à
-                            leurs besoins.
-                        </p>
-                        {isTextWeldomVisible ? (
-                            <p className={'font-serif'}>
-                                J'ai également développé
-                                ma capacité à <span className=''>proposer des solutions de bricolage à mes clients en fonction de leur niveau de compétence</span>.
-                                Cette expérience m'a permis
-                                d'approfondir mes connaissances en matière de bricolage. <br/>
-                                En tant que caissier, j'ai également appris à tenir et à gérer une caisse. J'ai acquis
-                                une grande précision
-                                dans la manipulation de l'argent et développé ma capacité à <span className=''>travailler efficacement.</span><br/>
-                                Au-delà de ces compétences techniques, cette expérience m'a également appris à <span
-                                className='font-bold'>être à l'écoute des clients, à répondre à leurs besoins
-                            et à leurs attentes, et à travailler en équipe</span>. J'ai eu la chance de travailler avec
-                                des collègues passionnés par leur métier et qui
-                                m'ont transmis leur savoir-faire. Grâce à cette expérience, j'ai acquis de nouvelles
-                                compétences, renforcé ma confiance en moi et cela m'a permis de
-                                financer une partie de mes études et d'acquérir une expérience professionnelle très
-                                valorisante pour mon CV.
-                            </p>
-                        ) : null}
-
-                        <p className={'font-serif'}>
-                            J'ai travailler dans le secteur de la restauration collective pendant plusieurs semaines,
-                            notamment au sein du prestigieux hôtel Le Normandie à Deauville, ainsi qu'au Golf de
-                            Deauville.
-                            J'ai travaillé dans la cuisine de l'établissement.
-                        </p>
-                        {isTextRestallianceVisible ? (
-                            <p className={'font-serif'}>
-                                J'ai eu l'opportunité de découvrir les différentes étapes de préparation
-                                des plats, de la découpe des ingrédients à la présentation finale sur les assiettes ou
-                                encore sur
-                                la mise en place des buffets. <br/> Ces expériences en restauration collective ont été
-                                pour moi
-                                très enrichissantes sur le plan professionnel. J'ai appris à travailler dans des
-                                environnements
-                                exigeants, où la qualité du service et des produits est primordiale.
-                            </p>
-                        ) : null}
-
-                        <p className={'font-serif'}>
-                            J'ai travaillé chez McDonald's pendant 6 mois et cette expérience a été très enrichissante.
-                            En tant qu'équipier polyvalent,
-                            j'ai occupé différents postes : <span className=''>préparation des aliments, service au comptoir, prise de commandes et nettoyage.</span>
-                            <br/>
-                        </p>
-                            <p className={'font-serif'}>
-                                Cette expérience m'a appris à<span className=''> travailler rapidement et efficacement dans un environnement très dynamique et exigeant</span>.
-                                J'ai appris à être à l'écoute des clients, à répondre à leurs besoins et à leurs
-                                attentes, tout en respectant les normes de qualité et de sécurité
-                                alimentaire. Macdonald fonctionnant en travaillant à la chaine, j'ai développé ma
-                                capacité à travailler en équipe, à communiquer avec mes collègues
-                                et à m'adapter à différentes situations.<br/>
-
-                                J'ai également appris l'importance de <span className=''>la rigueur, l'organisation et la gestion du stress</span>.
-                                En effet, la gestion du temps
-                                et des stocks est primordiale pour assurer la satisfaction des clients et la qualité des
-                                produits ce qui m'a permi de développer ma capacité à gérer mon
-                                temps et les priorités. <br/>
-                                Enfin, cette expérience m'a permis de découvrir un environnement professionnel très
-                                diversifié et multiculturel.
-                            </p>
-
-                        <p className={'font-serif'}>
-                            J'ai participé à plusieurs chantiers citoyens organisés par Siarce et la mairie de ma ville.
-                            Ces chantiers avaient pour objectif d'aider
-                            la ville à améliorer son cadre de vie en réalisant des <span className=''>travaux d'entretien et de rénovation de différents sites
-                            publics tels que des parcs et des jardins</span>.<br/>
-                        </p>
-                        {isTextSiarceVisible ? (
-                            <p className={'font-serif'}>
-                                Ces chantiers duraient une semaine et impliquaient la participation de nombreux
-                                volontaires entre 16 et 25 ans. Ensemble, nous avons travaillé
-                                dur pour nettoyer, réparer et embellir les différents sites, dans une ambiance
-                                conviviale et solidaire.<br/>
-
-                                Cette expérience m'a permis de découvrir l'importance du travail en équipe et de la
-                                solidarité dans la réalisation de projets communs. J'ai également
-                                renforcé mes liens avec ma communauté locale en contribuant activement à son
-                                développement.
-                                En somme, ces chantiers citoyens ont été pour moi une expérience très enrichissante et
-                                gratifiante.
-                            </p>
-                    */}
+                    <div className={"relative"}>
+                        <div className={"absolute left-5 top-0 hidden h-full w-px bg-emerald-200 md:block"} />
+                        <div className={"space-y-6 md:space-y-8"}>
+                            <JobArticle
+                                title={"Développeur web - front-end"}
+                                subtitle={"De 2024 à aujourd'hui"}
+                                summary={"Conception et développement de nouvelles fonctionnalités pour deux interfaces web distinctes dédiées au tracking et à la visualisation de satellites(Wewatch). Evolution visuel et optimisation de performance côté client. Gestion des releases, correction de bugs et mise à jour continue du système pour garantir la fiabilité de l'application."}
+                                imgSociety={alten}
+                                accent={"from-green-50 to-white"}
+                                badge={"CDI"}
+                                highlights={[
+                                    { title: "Modernisation IHM & UX", text: "Etre force de proposition pour améliorer et moderniser le visuel de l'IHM", icon: "https://www.svgrepo.com/show/502440/computer.svg" },
+                                    { title: "Nouvelle fonctionnalité", text: "Intégration de nouvelles fonctionnalités de visualisation de satellites", icon: "https://www.svgrepo.com/show/445268/new-rectangle-solid.svg" },
+                                    { title: "Spatiale", text: "Développement de nouvelles connaissances sur l'espace et les satellites", icon: "https://www.svgrepo.com/show/519074/satellite.svg" },
+                                ]}
+                            />
+                            <JobArticle
+                                title={"Alternant ingénieur en informatique"}
+                                subtitle={"De 2022 à 2024"}
+                                summary={"Amélioration de  l'intégration continue pour les radars de la famille des Multi Fonctional Radars (MFR). Optimisation et fiabilisation grâce à l'introduction de nouvelles méthodes de test et d'intégration."}
+                                imgSociety={thales}
+                                accent={"from-green-50 to-white"}
+                                badge={"Alternance"}
+                                highlights={[
+                                    { title: "CI/CD", text: "Intégration continue", icon: "https://www.svgrepo.com/show/502440/computer.svg" },
+                                    { title: "Radar", text: "Environnement de développement radar", icon: "https://www.svgrepo.com/show/121436/radar.svg" },
+                                    { title: "Déploiements", text: "Intégration continue des radars militaires", icon: "https://www.svgrepo.com/show/233976/suitcase-portfolio.svg" },
+                                ]}
+                            />
+                            <JobArticle
+                                title={"Conseiller de vente - CDI"}
+                                subtitle={"De 2020 à 2021, week-ends"}
+                                summary={"Conseils et accompagnement client dans le domaine du bricolage. Caisses et gestion de stock."}
+                                imgSociety={weldom}
+                                accent={"from-green-50 to-white"}
+                                badge={"CDI"}
+                                highlights={[
+                                    { title: "Bricolage", text: "Solutions de bricolage", icon: "https://www.svgrepo.com/show/485388/hammer.svg" },
+                                    { title: "Clientèle", text: "Service client", icon: "https://cdn-icons-png.flaticon.com/512/2534/2534183.png" },
+                                    { title: "Caisse", text: "Gestion des caisses", icon: "https://cdn-icons-png.flaticon.com/512/4689/4689923.png" },
+                                ]}
+                            />
+                            <JobArticle
+                                title={"Employé de restauration"}
+                                subtitle={"Durant l'été 2022"}
+                                summary={"Travail saisonnier dans la restauration, avec des responsabilités variées allant de la préparation des plats à la qualité du service, en passant par le travail en équipe."}
+                                imgSociety={restalliance}
+                                accent={"from-green-50 to-white"}
+                                badge={"Saisonnier"}
+                                highlights={[
+                                    { title: "Cuisine", text: "Préparation des plats", icon: "https://www.svgrepo.com/show/429377/bibimbub-cooking-food.svg " },
+                                    { title: "Service", text: "Qualité du service", icon: "https://www.svgrepo.com/show/244463/dish.svg" },
+                                    { title: "Équipe", text: "Travail en équipe", icon: "https://www.svgrepo.com/show/317748/team.svg" },
+                                ]}
+                            />
+                            <JobArticle
+                                title={"Equipier polyvalent"}
+                                subtitle={"De avril à septembre 2019"}
+                                summary={"Rôle polyvalent en environnement rapide, avec une attention particulière à la cadence, à la convivialité et à la coordination."}
+                                imgSociety={Mcdonald}
+                                accent={"from-green-50 to-white"}
+                                badge={"Étudiant"}
+                                highlights={[
+                                    { title: "Vitesse", text: "Service rapide", icon: "https://www.svgrepo.com/show/521655/fast-forward.svg" },
+                                    { title: "Polyvalence", text: "Polyvalence", icon: "https://www.svgrepo.com/show/493315/fast-food-male-clerk-upper-body.svg" },
+                                    { title: "Équipe", text: "Travail en équipe", icon: "https://www.svgrepo.com/show/317748/team.svg" },
+                                ]}
+                            />
+                            <JobArticle
+                                title={"Chantiers Citoyens"}
+                                subtitle={"En 2017 et 2018"}
+                            summary={"Implication dans des projets collectifs et solidaires sur une semaine. Avec une ouverture sur la communauté, le but étant de participer a des actions dans sa commune afin d'améliorer le quotidien des habitants."}
+                                imgSociety={siarce}
+                                accent={"from-green-50 to-white"}
+                                badge={"Engagement"}
+                                highlights={[
+                                    { title: "Solidarité", text: "Solidarité", icon: "https://cdn-icons-png.flaticon.com/512/3208/3208264.png" },
+                                    { title: "Communauté", text: "Contribution à la communauté locale", icon: "https://www.svgrepo.com/show/216839/newspaper-news.svg" },
+                                    { title: "Expérience", text: "Expérience enrichissante", icon: "https://www.svgrepo.com/show/478789/information.svg" },
+                                ]}
+                                isLast={true}
+                            />
+                        </div>
+                    </div>
                 </section>
             </section>
-            <Footer backgroundColor={"bg-pink-50"}></Footer>
+            <Footer backgroundColor={"bg-green-50"}></Footer>
         </>
     );
 }
