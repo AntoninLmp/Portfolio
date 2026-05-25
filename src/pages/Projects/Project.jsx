@@ -38,8 +38,8 @@ const projectOptions = [
         tags: ["Compression", "Structures de données", "Algorithmique"],
         content: (
             <p>
-                L’algorithme de Huffman permet de <span className={"font-semibold text-primary-green"}>compressser des données</span> en attribuant des codes plus courts aux symboles les plus fréquents.
-                J’ai utilisé cette logique pour travailler sur des problématiques de réduction de taille et de performance.
+                L’algorithme de Huffman permet de <span className={"font-semibold text-primary-green"}>compressser des données</span> en attribuant des codes de longueur variable aux symboles en fonction de leur fréquence d'apparition dans le fichier.
+                Il a été développé par David A. Huffman en 1952. Le principe de base de l'algorithme de Huffman repose sur l'idée de représenter les symboles les plus fréquents avec des codes plus courts et les symboles moins fréquents avec des codes plus longs. Cela permet d'optimiser la taille du fichier compressé, car les symboles fréquents sont représentés de manière plus compacte.
             </p>
         ),
     },
@@ -55,7 +55,7 @@ const projectOptions = [
         content: (
             <p>
                 Ce projet m’a permis de mettre en place un traitement complet d’automates finis avec <span className={"font-semibold text-primary-green"}>déterminisation, minimisation et reconnaissance de mots</span>.
-                J’ai aussi travaillé sur la qualité logicielle avec des tests unitaires et d’intégration.
+                Le programme doit également être capable de gérer plusieurs automates. Nous avons essayer de d'allier le bon fonctionnement du programme, la qualité de l'interface, la clarté des structures de données, la lisibilité du code.J'ai pu travailler en équipe sur des projets Spring Boot. J'ai pu mettre en place des tests unitaires et d'intégration avec Junit et Mockito.
             </p>
         ),
     },
@@ -67,10 +67,10 @@ const projectOptions = [
         imageSource: img_ordonnancement,
         githubLink: "https://github.com/AntoninLmp/Algorithme_Ordonnancement",
         accent: "from-amber-50 to-white",
-        tags: ["Python", "Pytests", "CI/CD"],
+        tags: ["Python", "Pytests"],
         content: (
             <p>
-                J’ai implémenté une solution d’ordonnancement avec une approche claire et structurée. L’objectif était d’améliorer la <span className={"font-semibold text-primary-green"}>lisibilité du code</span> et la robustesse du traitement.
+                J’ai implémenté une solution d’ordonnancement avec une approche claire et structurée. L’objectif était d’améliorer la <span className={"font-semibold text-primary-green"}>lisibilité du code et la robustesse du traitement</span>.
             </p>
         ),
     },
@@ -87,6 +87,8 @@ const projectOptions = [
         content: (
             <p>
                 Le projet Shard a mis en avant des enjeux techniques riches autour de la <span className={"font-semibold text-primary-green"}>gestion d’événements en temps réel</span> et de la collaboration en équipe.
+                Il s'agissait d'une API de stratégie en temps réel entre des vaisseaux dans l'espace. Travaillant en équipe sur le développement d'une API, notre objectif était de soutenir l'expérience de jeu immersive. 
+                Les itérations régulières et les panoblis de tests entre les versions ont été cruciaux pour garantir la qualité du projet.
             </p>
         ),
     },
@@ -109,7 +111,7 @@ const projectOptions = [
         id: "react",
         label: "React",
         icon: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
-        projectName: "Front library for building user interfaces",
+        projectName: "React, un outil moderne pour interfaces dynamiques",
         imageSource: "https://www.officialgates.com/assets/images/banner-images/react-native-app.png",
         githubLink: "https://github.com/Synops-ia/WebApp",
         accent: "from-amber-50 to-white",
@@ -117,7 +119,13 @@ const projectOptions = [
         content: (
             <>
                 <p>
-                    Mon parcours avec React a commencé sur ce portfolio puis s’est étendu à des projets plus complets, avec une <span className={"font-semibold text-primary-green"}>volonté constante d’apprendre et d’itérer</span>.
+                    Mon parcours avec React a débuté avec le projet de <span className={"font-semibold text-primary-green"}>construire ce portfolio</span>. En entreprenant cette initiative, j'ai commencer l'apprentissage continu de React pour créer une interface utilisateur dynamique et moderne. 
+                    Ce processus m'a permis de découvrir les subtilités de React, des composants aux états et aux cycles de vie. J'ai ensuite élargi mes compétences et les ai appliquées sur d'autre projets. En utilisant React de manière avancée, j'ai contribué à créer une interface
+                     interactive pour ce projet d'envergure, démontrant ainsi une progression significative dans ma maîtrise de cette bibliothèque.
+                </p>
+                <br />
+                <p>
+                    Ce portfolio, fruit de mon apprentissage initial, représente non seulement mes compétences actuelles, mais également ma volonté constante de relever des défis et d'apprendre de nouvelles technologies pour réaliser des projets exceptionnels.
                 </p>
                 
             </>
